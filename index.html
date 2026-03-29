@@ -295,6 +295,59 @@
     </div>
   </div>
   -->        
+<h2>YOLOv8+: Unified Detection, Segmentation, and Pose Estimation</h2>
+<div class="project-meta">
+  Ultralytics · PoseSegment · Detection / Instance Segmentation / Pose · ONNX / TorchScript / TensorRT
+</div>
+
+<p>
+  YOLOv8+ extends the Ultralytics framework with a new <strong>pose-segment</strong> task that jointly performs
+  object detection, instance segmentation, and pose estimation in a single forward pass. Instead of maintaining
+  separate models or multi-stage pipelines, I modified the training and inference stack to support a unified
+  multitask perception workflow.
+</p>
+
+<p>
+  The project required coordinated changes across the model head, dataset handling, collate logic, loss design,
+  metrics, and export pipeline. I also extended the workflow to support deployment-oriented export formats
+  including ONNX, TorchScript, and TensorRT, making the project both a modeling contribution and a practical
+  systems integration effort.
+</p>
+
+<div class="section-spacer">
+  <h3>What I implemented</h3>
+  <ul class="result-list">
+    <li>Introduced a new <strong>pose-segment</strong> task for joint detection, segmentation, and pose estimation.</li>
+    <li>Built a unified <strong>PoseSegment head</strong> to predict boxes, masks, and keypoints in one forward pass.</li>
+    <li>Extended the data pipeline to load segmentation masks and keypoints together.</li>
+    <li>Designed a combined multitask loss and evaluation flow for joint training.</li>
+    <li>Added export and inference support for ONNX, TorchScript, and TensorRT deployment workflows.</li>
+  </ul>
+</div>
+
+<div class="section-spacer">
+  <h3>Why it matters</h3>
+  <ul class="result-list">
+    <li>Replaces separate-task pipelines with a single integrated perception model.</li>
+    <li>Simplifies training and inference while preserving multiple output types.</li>
+    <li>Connects research modeling with deployment-oriented inference workflows.</li>
+  </ul>
+</div>
+
+<div class="section-spacer btn-row">
+  <a class="btn btn-primary btn-outline" href="#">Code</a>
+  <a class="btn btn-primary btn-outline" href="#">Report</a>
+  <a class="btn btn-primary btn-outline" href="#">Demo Video</a>
+  <a class="btn btn-primary btn-outline" href="#">Gallery</a>
+</div>
+
+<p class="project-meta">
+  Suggested demo caption: YOLOv8+ pose-segment demo. A unified multitask model that jointly predicts
+  detection, instance masks, and human keypoints, with export-ready workflows for ONNX, TorchScript,
+  and TensorRT.
+</p>
+
+          
 </section>
 
 <footer class="site-footer">
