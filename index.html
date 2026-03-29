@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="author" content="Fariborz Taherkhani">
-  <meta name="description" content="Fariborz Taherkhani — research homepage">
+  <meta name="description" content="Fariborz Taherkhani — Senior AI Engineer working on multimodal systems, generative models, perception, and offline reinforcement learning.">
   <meta name="theme-color" content="#ffffff">
   <link rel="canonical" href="https://ulteraa.github.io/">
   <title>Fariborz Taherkhani</title>
@@ -16,6 +16,27 @@
   <link rel="stylesheet" href="css/academicons.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather|Roboto+Mono">
   <link rel="stylesheet" href="css/hugo-academic.css">
+  <style>
+    .hero-summary { margin-top: 18px; font-size: 1.05em; line-height: 1.7; }
+    .focus-list { margin-top: 14px; padding-left: 20px; }
+    .focus-list li { margin-bottom: 8px; }
+    .project-card {
+      background: #fff;
+      border: 1px solid #e9ecef;
+      border-radius: 12px;
+      padding: 28px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+    }
+    .project-meta {
+      color: #666;
+      font-size: 0.95em;
+      margin: 8px 0 18px 0;
+    }
+    .result-list { padding-left: 20px; }
+    .result-list li { margin-bottom: 8px; }
+    .btn-row a { margin-right: 10px; margin-bottom: 10px; }
+    .section-spacer { margin-top: 20px; }
+  </style>
 </head>
 <body id="top">
 
@@ -34,8 +55,7 @@
     <div class="collapse navbar-collapse" id="navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li class="nav-item"><a href="#top">Home</a></li>
-        <li class="nav-item"><a href="#selected-publications">Publications</a></li>
-        <li class="nav-item"><a href="#services">Services</a></li>
+        <li class="nav-item"><a href="#offline-rl">Offline RL Project</a></li>
         <li class="nav-item"><a href="https://github.com/Ulteraa">GitHub</a></li>
         <li class="nav-item"><a href="https://scholar.google.com/citations?user=Lk8MgHIAAAAJ&amp;hl=en">Google Scholar</a></li>
       </ul>
@@ -44,720 +64,126 @@
 </nav>
 
 <section class="home-section" id="bio">
-<div class="container">
-<div class="row" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-<div class="col-xs-12 col-md-4">
-<div id="profile">
-<div class="portrait" itemprop="image" style="background-image: url('img/image1.jpg');"></div>
-<div class="portrait-title">
-<h2 itemprop="name">Fariborz Taherkhani</h2>
-<h3 itemprop="jobTitle">Postdoctoral Researcher</h3>
-<h3 itemprop="worksFor">Carnegie Mellon University</h3>
-</div>
-<ul class="social-icon">
-<li>
-<a href="mailto:fariborztaherkhani@gmail.com">
-<i aria-hidden="true" class="fa fa-envelope big-icon"></i>
-</a>
-</li>
-<li>
-<a href="https://scholar.google.com/citations?user=Lk8MgHIAAAAJ&amp;hl=en">
-<i aria-hidden="true" class="ai ai-google-scholar big-icon"></i>
-</a>
-</li>
-<!--li>
-                    <a href="https://www.linkedin.com/in/fariborz-taherkhani-89515370/">
-                    
-                        <i class="fa fa-linkedin big-icon" aria-hidden="true"></i>
-                    
-                    </a>
-                </li>-->
-<!--<li>-->
-<!--<a href="http://www.facebook.com/xunhuang1995">-->
-<!-- -->
-<!--<i class="fa fa-facebook big-icon" aria-hidden="true"></i>-->
-<!-- -->
-<!--</a>-->
-<!--</li>-->
-<li>
-<a href="https://github.com/Ulteraa">
-<i aria-hidden="true" class="fa fa-github big-icon"></i>
-</a>
-</li>
-</ul>
-</div>
-</div>
-<div class="visible-sm visible-xs"></div>
-<div class="col-xs-12 col-md-8" itemprop="description">
-<h1 id="about:6083a88ee3411b0d17ce02d738f69d47">About</h1>
-<p>
-    Welcome to my homepage! I am a postdoctoral researcher in <a href="http://humansensing.cs.cmu.edu/people/"> Human Sensing Laboratory (HSL) </a> working with <a href="https://www.cs.cmu.edu/~ftorre/">Prof. Fernando De La Torre</a> in the <a href="https://www.ri.cmu.edu/">Robotics Institute</a> at  <a href="https://www.cmu.edu/"> Carnegie Mellon University</a>. Previously, I was research collaborator III at Meta. I got my Ph.D. in computer science from the <a href="https://lcsee.statler.wvu.edu/"> Department of Computer Science and Electrical Engineering </a> at <a href="https://www.wvu.edu/"> West Virginia University </a>, where I worked with <a href="https://nassernasrabadi.faculty.wvu.edu/">Prof. Nasser M. Nasrabadi</a>.
-    
-    
- My research interests are machine learning, deep learning and its applications in computer vision.
-<!-- <p><a href="https://drive.google.com/file/d/1kgCFurh-uHB5oX-vc7JvzDyYizIfjWcu/view?usp=share_link">[Curriculum vitae]</a></p>
-    <!--My research has been supported by-->
-<!--<a href=""></a>, <a href=""></a>, -->
-<!--</p>-->
-<div class="row">
-<div class="col-sm-12">
-<p>
-<h3>News</h3>
-<p>
-<li>Oct 10, 2022    One paper got accepted in WACV 2023.</li>
-</p>
-<p>
-<li>July 10, 2022    One paper got accepted in ECCV 2022.</li>
-</p>
-<p>
-<li>Jan 1, 2022    Joined as a research collaborator III to Meta.</li>
-</p>
-<p>
-<li>Dec 3, 2021     One paper was accepted at IEEE Transactions on Biometrics (TBIOM)</li>
-</p>
-<p>
-<li>Sep 1, 2021    Started postdoc at CMU.</li>
-</p>
-<p>
-<li>May 1, 2021    Outstanding reviewer in CVPR-2021.</li>
-</p>
-<li>Mar 25, 2021    Two papers got accepted in CVPR-2021.</li>
-<p>
-<li>July 17, 2020    Won the best student paper award for the paper " PF-cpGAN : Profile to Frontal Coupled GAN for Face Recognition in the Wild" in IJCB-2020.</li>
-</p>
-</p></div>
-</div></p></div></div></div></section>
+  <div class="container">
+    <div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <div class="col-xs-12 col-md-4">
+        <div id="profile">
+          <div class="portrait" itemprop="image" style="background-image: url('img/image1.jpg');"></div>
+          <div class="portrait-title">
+            <h2 itemprop="name">Fariborz Taherkhani</h2>
+            <h3 itemprop="jobTitle">Senior AI Engineer</h3>
+            <h3>Multimodal Systems · Vision · Generative Models · Intelligent Agents</h3>
+          </div>
+          <ul class="social-icon">
+            <li>
+              <a href="mailto:fariborztaherkhani@gmail.com"><i class="fa fa-envelope big-icon" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="https://scholar.google.com/citations?user=Lk8MgHIAAAAJ&amp;hl=en"><i class="ai ai-google-scholar big-icon" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="https://github.com/Ulteraa"><i class="fa fa-github big-icon" aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
 
-<section id="selected-publications" class="home-section">
+      <div class="visible-sm visible-xs"></div>
 
-<div class="container">
-<div class="row">
-<div align="center" class="col-xs-12 col-md-12 section-heading">
-<h1>Selected Publications</h1>
-</div>
-<div class="col-xs-12 col-md-12">
-<br/>
-<ul class="fa-ul">
-<div class="pub-list-item" itemscope="" itemtype="http://schema.org/CreativeWork">
-<div class="row">
-<div class="col-xs-12 col-md-3">
-<p>
-</p>
-<!--<a href="publication/funit/index.html">-->
-<img class="pub-banner" itemprop="image" src="img/sh-tex.png" style="max-height: 250px"/>
-
-</div>
-<div class="col-xs-12 col-md-9">
-<p>
-</p>
-<h3 class="article-title" itemprop="name">
-<a href="https://aashishrai3799.github.io/3DFaceCAM/" itemprop="url">Controllable 3D Generative Adversarial Face Model 
-via Disentangling Shape and Appearance</a>
-</h3>
-<div class="pub-authors" itemprop="author">
-                
-                Fariborz Taherkhani, Aashish Rai*, Quankai Gao*, Shaunak Srivastava*, Xuanbai Chen, Fernando 
-de la Torre, Steven Song, Aayush Prakash, and Daeil Kim
-
-            </div>
-<div align="center" class="pub-publication">
-                
-                    WACV-2023
-                
-            </div>
-<div class="pub-links">
-</div>
-</div>
-</div>
-</div>
-<p>
-</p>
-<div class="pub-list-item" itemscope="" itemtype="http://schema.org/CreativeWork">
-<div class="row">
-<div class="col-xs-12 col-md-3">
-<p>
-</p>
-<!--<a href="publication/funit/index.html">-->
-<img class="pub-banner" itemprop="image" src="img/ECCV-2022.png" style="max-height: 250px"/>
-
-</div>
-<div class="col-xs-12 col-md-9">
-<p>
-</p>
-<h3 class="article-title" itemprop="name">
-<a href="https://arxiv.org/pdf/2209.01199.pdf" itemprop="url">Revisiting Outer Optimization in Adversarial Training</a>
-</h3>
-<div class="pub-authors" itemprop="author">
-                
-                Ali Dabouei, <b>Fariborz Taherkhani </b>, Sobhan Soleymani,  Nasser M Nasrabadi
-
-            </div>
-<div align="center" class="pub-publication">
-                
-                    ECCV-2022
-                
-            </div>
-<div class="pub-links">
-</div>
-</div>
-</div>
-</div>
-<p>
-</p>
-<div class="pub-list-item" itemscope="" itemtype="http://schema.org/CreativeWork">
-<div class="row">
-<div class="col-xs-12 col-md-3">
-<p>
-</p>
-<!--<a href="publication/funit/index.html">-->
-<img class="pub-banner" itemprop="image" src="img/TBIOM-S.png" style="max-height: 250px"/>
-
-</div>
-<div class="col-xs-12 col-md-9">
-<p>
-</p>
-<h3 class="article-title" itemprop="name">
-<a href="https://ieeexplore.ieee.org/document/9631949" itemprop="url">Quality-Aware Multimodal Biometric Recognition</a>
-</h3>
-<div class="pub-authors" itemprop="author">
-                
-                Sobhan Soleymani, Ali Dabouei, <b>Fariborz Taherkhani </b>,  Mehdi Iranmanesh,
-Jeremy Dawson, Nasser Nasrabadi
-
-            </div>
-<div align="center" class="pub-publication">
-                
-                    IEEE Transactions on Biometrics, Behavior, and Identity Science-2022
-                
-            </div>
-<div class="pub-links">
-</div>
-</div>
-</div>
-</div>
-<p>
-</p>
-<div class="pub-list-item" itemscope="" itemtype="http://schema.org/CreativeWork">
-<div class="row">
-<div class="col-xs-12 col-md-3">
-<p>
-</p>
-<!--<a href="publication/funit/index.html">-->
-<img class="pub-banner" itemprop="image" src="img/CVPR_me.png" style="max-height: 250px"/>
-
-</div>
-<div class="col-xs-12 col-md-9">
-<p>
-</p>
-<h3 class="article-title" itemprop="name">
-<a href="https://openaccess.thecvf.com/content/CVPR2021/html/Taherkhani_Self-Supervised_Wasserstein_Pseudo-Labeling_for_Semi-Supervised_Image_Classification_CVPR_2021_paper.html" itemprop="url">Self-Supervised Wasserstein Pseudo-Labeling for Semi-Supervised Image Classification</a>
-</h3>
-<div class="pub-authors" itemprop="author">
-<b>Fariborz Taherkhani </b>, Ali Dabouei, Sobhan Soleymani,  Jeremy Dawson, Nasser M Nasrabadi
-
-            </div>
-<div align="center" class="pub-publication">
-                
-                    CVPR-2021
-                
-            </div>
-<div class="pub-links">
-</div>
-</div>
-</div>
-</div>
-<p>
-</p>
-<div class="pub-list-item" itemscope="" itemtype="http://schema.org/CreativeWork">
-<div class="row">
-<div class="col-xs-12 col-md-3">
-<p>
-</p>
-<!--<a href="publication/funit/index.html">-->
-<img class="pub-banner" itemprop="image" src="img/CVPR_Ali.png" style="max-height: 250px"/>
-
-</div>
-<div class="col-xs-12 col-md-9">
-<p>
-</p>
-<h3 class="article-title" itemprop="name">
-<a href="https://openaccess.thecvf.com/content/CVPR2021/html/Dabouei_SuperMix_Supervising_the_Mixing_Data_Augmentation_CVPR_2021_paper.html" itemprop="url">Supermix: Supervising the mixing data augmentation</a>
-</h3>
-<div class="pub-authors" itemprop="author">
-                
-                Ali Dabouei, Sobhan Soleymani, <b>Fariborz Taherkhani </b>, Nasser M Nasrabadi
-
-            </div>
-<div align="center" class="pub-publication">
-                
-                    CVPR-2021
-                
-            </div>
-<div class="pub-links">
-</div>
-</div>
-</div>
-</div>
-<p>
-</p>
-<div class="pub-list-item" itemscope="" itemtype="http://schema.org/CreativeWork">
-<div class="row">
-<div class="col-xs-12 col-md-3">
-<p>
-</p>
-<!--<a href="publication/funit/index.html">-->
-<img class="pub-banner" itemprop="image" src="img/WACV2021.png" style="max-height: 200px"/>
-
-</div>
-<div class="col-xs-12 col-md-9">
-<p>
-</p>
-<h3 class="article-title" itemprop="name">
-<a href="https://openaccess.thecvf.com/content/WACV2021/html/Soleymani_Mutual_Information_Maximization_on_Disentangled_Representations_for_Differential_Morph_Detection_WACV_2021_paper.html" itemprop="url">Mutual Information Maximization on Disentangled Representations for Differential Morph Detection</a>
-</h3>
-<div class="pub-authors" itemprop="author">
-                
-               Sobhan Soleymani, Ali Dabouei,  <b>Fariborz Taherkhani </b>, Nasser M Nasrabadi
-
-            </div>
-<div align="center" class="pub-publication">
-                
-                    WACV-2021
-                
-            </div>
-<div class="pub-links">
-</div>
-</div>
-</div>
-</div>
-<div class="pub-list-item" itemscope="" itemtype="http://schema.org/CreativeWork">
-<div class="row">
-<div class="col-xs-12 col-md-3">
-<p>
-</p>
-<!--<a href="publication/funit/index.html">-->
-<img class="pub-banner" itemprop="image" src="img/ECCV2020.png" style="max-height: 250px"/>
-
-</div>
-<div class="col-xs-12 col-md-9">
-<p>
-</p>
-<h3 class="article-title" itemprop="name">
-<a href="https://link.springer.com/chapter/10.1007%2F978-3-030-58548-8_30" itemprop="url">Transporting Labels via Hierarchical Optimal Transport for Semi-Supervised Learning</a>
-</h3>
-<div class="pub-authors" itemprop="author">
-<b>Fariborz Taherkhani</b>, Ali Dabouei, Sobhan Soleymani, Jeremy Dawson, Nasser M. Nasrabadi
-
-            </div>
-<div align="center" class="pub-publication">
-                
-                    ECCV-2020 (Spotlight Paper)
-                
-            </div>
-<div class="pub-links">
-</div>
-</div>
-</div>
-</div>
-<div class="pub-list-item" itemscope="" itemtype="http://schema.org/CreativeWork">
-<div class="row">
-<div class="col-xs-12 col-md-3">
-<!--<a href="publication/munit/index.html">-->
-<img class="pub-banner" itemprop="image" src="img/TBIOM.png" style="max-height: 250px"/>
-
-</div>
-<div class="col-xs-12 col-md-9">
-<h3 class="article-title" itemprop="name">
-<a href="https://ieeexplore.ieee.org/abstract/document/9052714" itemprop="url">Error-Corrected Margin-Based Deep Cross-Modal Hashing for Facial Image Retrieval</a>
-</h3>
-<div class="pub-authors" itemprop="author">
-<b>Fariborz Taherkhani</b>, Veeru Talreja, Matthew C Valenti, Nasser M Nasrabadi
-                
-            </div>
-<div align="center" class="pub-publication">
-                
-                    IEEE Transactions on Biometrics, Behavior, and Identity Science-2020 
-                
-            </div>
-<div class="pub-links">
-</div>
-</div>
-</div>
-</div>
-<div class="pub-list-item" itemscope="" itemtype="http://schema.org/CreativeWork">
-<div class="row">
-<div class="col-xs-12 col-md-3">
-<p>
-</p>
-<!--<a href="publication/funit/index.html">-->
-<img class="pub-banner" itemprop="image" src="img/CVPR2020.png" style="max-height: 200px"/>
-
-</div>
-<div class="col-xs-12 col-md-9">
-<p>
-</p>
-<h3 class="article-title" itemprop="name">
-<a href="https://openaccess.thecvf.com/content_CVPR_2020/html/Dabouei_Exploiting_Joint_Robustness_to_Adversarial_Perturbations_CVPR_2020_paper.html" itemprop="url">Exploiting Joint Robustness to Adversarial Perturbations</a>
-</h3>
-<div class="pub-authors" itemprop="author">
-
-                Ali Dabouei, Sobhan Soleymani, <b>Fariborz Taherkhani</b>, Jeremy Dawson, Nasser M Nasrabadi
-
-            </div>
-<div align="center" class="pub-publication">
-
-                    CVPR-2020
-
-            </div>
-<div class="pub-links">
-</div>
-</div>
-</div>
-<div class="pub-list-item" itemscope="" itemtype="http://schema.org/CreativeWork">
-<div class="row">
-<div class="col-xs-12 col-md-3">
-<p>
-</p>
-<!--<a href="publication/funit/index.html">-->
-<img class="pub-banner" itemprop="image" src="img/VACV-smooth.png" style="max-height: 250px"/>
-
-</div>
-<div class="col-xs-12 col-md-9">
-<p>
-</p>
-<h3 class="article-title" itemprop="name">
-<a href="https://openaccess.thecvf.com/content_WACV_2020/html/Dabouei_SmoothFool_An_Efficient_Framework_for_Computing_Smooth_Adversarial_Perturbations_WACV_2020_paper.html" itemprop="url">SmoothFool: An Efficient Framework for Computing Smooth Adversarial Perturbations</a>
-</h3>
-<div class="pub-authors" itemprop="author">
-                
-              Ali Dabouei,  Sobhan Soleymani,  <b>Fariborz Taherkhani </b>, Nasser M Nasrabadi
-
-            </div>
-<div align="center" class="pub-publication">
-                
-                    WACV-2020
-                
-            </div>
-<div class="pub-links">
-</div>
-</div>
-</div>
-</div>
-<div class="pub-list-item" itemscope="" itemtype="http://schema.org/CreativeWork">
-<div class="row">
-<div class="col-xs-12 col-md-3">
-<p>
-</p>
-<!--<a href="publication/funit/index.html">-->
-<img class="pub-banner" itemprop="image" src="img/WACV_Dis.png" style="max-height: 200px"/>
-
-</div>
-<div class="col-xs-12 col-md-9">
-<p>
-</p>
-<h3 class="article-title" itemprop="name">
-<a href="https://openaccess.thecvf.com/content_WACV_2020/html/Dabouei_Boosting_Deep_Face_Recognition_via_Disentangling_Appearance_and_Geometry_WACV_2020_paper.html" itemprop="url">Boosting Deep Face Recognition via Disentangling Appearance and Geometry</a>
-</h3>
-<div class="pub-authors" itemprop="author">
-                
-              Ali Dabouei,  <b>Fariborz Taherkhani </b>, Sobhan Soleymani  , Nasser M Nasrabadi
-
-            </div>
-<div align="center" class="pub-publication">
-                
-                    WACV-2020
-                
-            </div>
-<div class="pub-links">
-</div>
-</div>
-</div>
-</div>
-<div class="pub-list-item" itemscope="" itemtype="http://schema.org/CreativeWork">
-<div class="row">
-<div class="col-xs-12 col-md-3">
-<p>
-</p>
-<!--<a href="publication/funit/index.html">-->
-<img class="pub-banner" itemprop="image" src="img/IJCB.png" style="max-height: 150px"/>
-
-</div>
-<div class="col-xs-12 col-md-9">
-<p>
-</p>
-<h3 class="article-title" itemprop="name">
-<a href="https://ieeexplore.ieee.org/document/9304872" itemprop="url">PF-cpGAN: Profile to Frontal Coupled GAN for Face Recognition in the Wild</a>
-</h3>
-<div class="pub-authors" itemprop="author">
-<b>Fariborz Taherkhani</b>, Veeru Talreja, Jeremy Dawson, Matthew C. Valenti, and Nasser M. Nasrabadi
-
-
-            </div>
-<div align="center" class="pub-publication">
-                
-                    IJCB-2020 (Best Student Paper Award)
-                
-            </div>
-<div class="pub-links">
-</div>
-</div>
-</div>
-</div>
-<div class="pub-list-item" itemscope="" itemtype="http://schema.org/CreativeWork">
-<div class="row">
-<div class="col-xs-12 col-md-3">
-<p>
-</p>
-<!--<a href="publication/funit/index.html">-->
-<img class="pub-banner" itemprop="image" src="img/WACV_Hadi.png" style="max-height: 250px"/>
-
-</div>
-<div class="col-xs-12 col-md-9">
-<p>
-</p>
-<h3 class="article-title" itemprop="name">
-<a href="https://openaccess.thecvf.com/content_WACV_2020/html/Kazemi_Preference-Based_Image_Generation_WACV_2020_paper.html" itemprop="url">Preference-Based Image Generation</a>
-</h3>
-<div class="pub-authors" itemprop="author">
-                
-           Hadi Kazemi, <b>Fariborz Taherkhani </b>, Nasser M Nasrabadi
-
-            </div>
-<div align="center" class="pub-publication">
-                
-                    WACV-2020
-                
-            </div>
-<div class="pub-links">
-</div>
-</div>
-</div>
-</div>
-<div class="pub-list-item" itemscope="" itemtype="http://schema.org/CreativeWork">
-<div class="row">
-<div class="col-xs-12 col-md-3">
-<p>
-</p>
-<!--<a href="publication/funit/index.html">-->
-<img class="pub-banner" itemprop="image" src="img/ICCV.png" style="max-height: 200px"/>
-
-</div>
-<div class="col-xs-12 col-md-9">
-<p>
-</p>
-<h3 class="article-title" itemprop="name">
-<a href="https://openaccess.thecvf.com/content_ICCV_2019/html/Taherkhani_A_Weakly_Supervised_Fine_Label_Classifier_Enhanced_by_Coarse_Supervision_ICCV_2019_paper.html" itemprop="url">A Weakly Supervised Fine Label Classifier Enhanced by Coarse Supervision</a>
-</h3>
-<div class="pub-authors" itemprop="author">
-<b>Fariborz Taherkhani</b>, Hadi Kazemi, Ali Dabouei, Jeremy Dawson, Nasser M Nasrabadi
-
-            </div>
-<div align="center" class="pub-publication">
-
-                    ICCV-2019
-
-            </div>
-<div class="pub-links">
-</div>
-</div>
-</div>
-<div class="pub-list-item" itemscope="" itemtype="http://schema.org/CreativeWork">
-<div class="row">
-<div class="col-xs-12 col-md-3">
-<p>
-</p>
-<!--<a href="publication/funit/index.html">-->
-<img class="pub-banner" itemprop="image" src="img/AAAI.png" style="max-height: 300px"/>
-
-</div>
-<div class="col-xs-12 col-md-9">
-<p>
-</p>
-<h3 class="article-title" itemprop="name">
-<a href="https://ojs.aaai.org/index.php/AAAI/article/view/4438" itemprop="url">Matrix completion for graph-based deep semi-supervised learning</a>
-</h3>
-<div class="pub-authors" itemprop="author">
-<b>Fariborz Taherkhani</b>, Hadi Kazemi, Nasser M Nasrabadi
-
-            </div>
-<div align="center" class="pub-publication">
-
-                    AAAI-2019
-
-            </div>
-<div class="pub-links">
-</div>
-</div>
-</div>
-<div class="pub-list-item" itemscope="" itemtype="http://schema.org/CreativeWork">
-<div class="row">
-<div class="col-xs-12 col-md-3">
-<p>
-</p>
-<!--<a href="publication/funit/index.html">-->
-<img class="pub-banner" itemprop="image" src="img/NIPS.png" style="max-height: 200px"/>
-
-</div>
-<div class="col-xs-12 col-md-9">
-<p>
-</p>
-<h3 class="article-title" itemprop="name">
-<a href="https://proceedings.neurips.cc/paper/2018/hash/c7c46d4baf816bfb07c7f3bf96d88544-Abstract.html" itemprop="url">Unsupervised image-to-image translation using domain-specific variational information bound</a>
-</h3>
-<div class="pub-authors" itemprop="author">
-
-                Hadi Kazemi, Sobhan Soleymani, <b>Fariborz Taherkhani</b>, Seyed Mehdi Iranmanesh, Nasser M Nasrabadi
-
-            </div>
-<div align="center" class="pub-publication">
-
-                    NeurIPS-2018
-
-            </div>
-<div class="pub-links">
-</div>
-</div>
-</div>
-<div class="pub-list-item" itemscope="" itemtype="http://schema.org/CreativeWork">
-<div class="row">
-<div class="col-xs-12 col-md-3">
-<p>
-</p>
-<!--<a href="publication/pointflow/index.html">-->
-<img class="pub-banner" itemprop="image" src="img/CVPERW.png" style="max-height: 200px"/>
-<!--</a>-->
-</div>
-<div class="col-xs-12 col-md-9">
-<h3 class="article-title" itemprop="name">
-<a href="https://openaccess.thecvf.com/content_cvpr_2018_workshops/w11/html/Taherkhani_A_Deep_Face_CVPR_2018_paper.html" itemprop="url">A deep face identification network enhanced by facial attributes prediction</a>
-</h3>
-<div class="pub-authors" itemprop="author">
-<b>Fariborz Taherkhani</b>, Nasser M Nasrabadi, Jeremy Dawson
-
-
-            </div>
-<div align="center" class="pub-publication">
- 
-                   CVPRW-2018 (Best Student Workshop Award)
-            </div>
-<div class="pub-links">
-</div>
-</div>
-</div>
-<div class="pub-list-item" itemscope="" itemtype="http://schema.org/CreativeWork">
-<div class="row">
-<div class="col-xs-12 col-md-3">
-<p>
-</p>
-<!--<a href="publication/pointflow/index.html">-->
-<img class="pub-banner" itemprop="image" src="img/Noise.png" style="max-height: 200px"/>
-<!--</a>-->
-</div>
-<div class="col-xs-12 col-md-9">
-<h3 class="article-title" itemprop="name">
-<a href="https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/iet-ipr.2016.0521" itemprop="url">Restoring highly corrupted images by impulse noise using radial basis functions interpolation</a>
-</h3>
-<div class="pub-authors" itemprop="author">
-<b>Fariborz Taherkhani</b>, Mansour Jamzad
-
-
-            </div>
-<div align="center" class="pub-publication">
- 
-                  IET Image Processing-2017
-            </div>
-<div class="pub-links">
-</div>
-</div>
-</div>
-</div>
-<!--<section class="home-section">-->
-<!--<li><a-->
-<!--href="https://scholar.google.com/citations?user=Lk8MgHIAAAAJ&hl=en">Google Scholar</a></li>-->
-<!--</section>-->
-<section class="home-section" id="services">
-<div class="container">
-<div class="row">
-<div align="center" class="col-xs-12 col-md-12 section-heading">
-<h1>Services</h1>
-</div>
-<div class="col-xs-12 col-md-12">
-<br/>
-<p>Journal reviewer:
-                    <br/> TIP, TIFS, IET Signal Processing, IEEE Signal Processing Letter,  Trans. Neural Netw. Learn. Syst.    </p>
-<p>Conference reviewer:
-           <br/> NeurIPS, ICML, ICLR,  ICCV, CVPR, WACV </p>
-</div>
-</div>
-</div>
-</section>
-<section>
-<a href="http://www.clustrmaps.com/map/Electronicshelf.github.io/" title="Visit tracker for Electronicshelf.github.io/"><img src="//www.clustrmaps.com/map_v2.png?d=qR6p_62c0Q-Db6bzTQhYzjr1Lo5QJJ5LcN0jcaTymN4"/></a>
-<!--<a href="http://www2.clustrmaps.com/counter/maps.php?url=http://www.cs.cmu.edu/~cdyer" id="clustrMapsLink"><img align="right" src="http://www2.clustrmaps.com/counter/index2.php?electronicshelf.github.io/index.html" style="border:0px;" alt="Locations of visitors to this page" title="Locations of visitors to this page" id="clustrMapsImg" onerror="this.onerror=null; this.src='http://clustrmaps.com/images/clustrmaps-back-soon.jpg'; document.getElementById('clustrMapsLink').href='http://clustrmaps.com';"></a>-->
-<!--<h2>Random Stuff</h2>-->
-<p>
-</p>
-</section>
-<footer class="site-footer">
-<div class="container">
-<p class="powered-by">
-<span class="pull-right"><a href="#" id="back_to_top"><span class="button_icon"><i aria-hidden="true" class="fa fa-chevron-up fa-2x"></i></span></a></span>
-</p>
-</div>
-</footer>
-<script src="../../cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
-<script src="../../cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
-<script src="js/jquery-1.12.3.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/hugo-academic.js"></script>
-<script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
-            ga('create', 'UA-83050038-1', 'auto');
-            ga('send', 'pageview');
-
-             
-            var links = document.querySelectorAll('a');
-            Array.prototype.map.call(links, function(item) {
-                if (item.host != document.location.host) {
-                    item.addEventListener('click', function() {
-                        var action = item.getAttribute('data-action') || 'follow';
-                        ga('send', 'event', 'outbound', action, item.href);
-                    });
-                }
-            });
-        </script>
-<script src="../../cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-</div></div></div></div></div></ul></div></div></div>
+      <div class="col-xs-12 col-md-8" itemprop="description">
+        <h1>About</h1>
+        <p class="hero-summary">
+          I am a Senior AI Engineer with a PhD in Computer Science, focused on multimodal AI systems,
+          representation learning, generative modeling, transformer architectures, and production-scale
+          perception systems. My work spans research and deployment: from controllable 3D generative models
+          and weakly supervised learning to real-time robotics perception and offline reinforcement learning.
+        </p>
+        <p class="hero-summary">
+          I have built end-to-end ML pipelines for robotics and real-world environments, including synthetic
+          data generation, large-scale training infrastructure, model optimization, and deployment under strict
+          latency and hardware constraints. I am particularly interested in systems that connect strong modeling
+          ideas with practical decision-making and robust closed-loop behavior.
+        </p>
+        <ul class="focus-list">
+          <li>Multimodal and foundation-model systems</li>
+          <li>Perception for robotics and real-time deployment</li>
+          <li>Generative modeling and 3D vision</li>
+          <li>Offline reinforcement learning and sequential decision systems</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section class="home-section" id="services">
-<div class="container">
-<div class="row">
-<div align="center" class="col-xs-12 col-md-12 section-heading">
-<h1>Services</h1>
-</div>
-<div class="col-xs-12 col-md-12">
-<br/>
-<p>Journal reviewer:
-                    <br/> TIP, TIFS, IET Signal Processing, IEEE Signal Processing Letter,  Trans. Neural Netw. Learn. Syst.    </p>
-<p>Conference reviewer:
-           <br/> NeurIPS, ICML, ICLR,  ICCV, CVPR, WACV </p>
-</div>
-</div>
-</div>
+<section class="home-section" id="offline-rl">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-12 section-heading" align="center">
+        <h1>Featured Project</h1>
+      </div>
+      <div class="col-xs-12 col-md-12">
+        <div class="project-card">
+          <h2>Stable Training Losses Do Not Guarantee Good Closed-Loop Control in Offline RL</h2>
+          <div class="project-meta">
+            BC · IQL · CQL · MuJoCo Walker2d / Hopper / Kitchen · Minari · d3rlpy · PyTorch
+          </div>
+
+          <p>
+            I built an offline reinforcement learning benchmark to study a practical failure mode in sequential
+            decision systems: stable or smooth offline training does not necessarily translate to strong closed-loop
+            behavior at rollout time. The project compares Behavior Cloning (BC), Implicit Q-Learning (IQL), and
+            Conservative Q-Learning (CQL) on MuJoCo locomotion and manipulation tasks.
+          </p>
+
+          <p>
+            The main result was that BC remained a strong support-preserving baseline, IQL underperformed in my
+            setup despite apparently reasonable training behavior, and best-checkpoint CQL produced the strongest
+            Walker2d result once periodic evaluation and checkpoint-based model selection were used. This project
+            emphasizes a key offline RL lesson: rollout evaluation matters more than training losses alone.
+          </p>
+
+          <div class="section-spacer">
+            <h3>What I implemented</h3>
+            <ul class="result-list">
+              <li>Offline RL training and evaluation pipeline for MuJoCo locomotion and manipulation tasks</li>
+              <li>BC, IQL, and CQL baselines with periodic checkpoint evaluation</li>
+              <li>Normalized scoring, rollout benchmarking, and rendered Walker2d policy videos</li>
+              <li>Checkpoint-based model selection to capture the best closed-loop controller instead of the final training state</li>
+            </ul>
+          </div>
+
+          <div class="section-spacer">
+            <h3>Key findings</h3>
+            <ul class="result-list">
+              <li>Behavior Cloning produced a strong and visually convincing baseline.</li>
+              <li>IQL underperformed significantly on Walker2d in this setup.</li>
+              <li>CQL was the strongest offline RL method among the tested approaches.</li>
+              <li>Best-checkpoint selection was critical because later checkpoints from the same run could degrade.</li>
+            </ul>
+          </div>
+
+          <div class="section-spacer btn-row">
+            <a class="btn btn-primary btn-outline" href="https://github.com/Ulteraa">Code</a>
+            <a class="btn btn-primary btn-outline" href="#">Demo Video</a>
+            <a class="btn btn-primary btn-outline" href="#">Technical Writeup</a>
+          </div>
+
+          <p class="project-meta">
+            Suggested demo caption: Walker2d rollout from the best CQL checkpoint. The strongest controller emerged
+            from periodic evaluation and checkpoint selection, illustrating that stable training losses alone do not
+            guarantee strong closed-loop performance in offline RL.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <footer class="site-footer">
   <div class="container">
     <p class="powered-by">
       <span class="pull-right">
-        <a href="#top" id="back_to_top">
-          <span class="button_icon"><i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i></span>
-        </a>
+        <a href="#top" id="back_to_top"><span class="button_icon"><i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i></span></a>
       </span>
     </p>
   </div>
