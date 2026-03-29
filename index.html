@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="author" content="Fariborz Taherkhani">
-  <meta name="description" content="Fariborz Taherkhani — Senior AI Engineer working on multimodal AI, LLM/VLM systems, generative models, perception, and offline reinforcement learning.">
+  <meta name="description" content="Fariborz Taherkhani — Senior AI Engineer working on multimodal AI systems, LLM/VLM pipelines, generative models, robotics perception, and offline reinforcement learning.">
   <meta name="theme-color" content="#ffffff">
   <link rel="canonical" href="https://ulteraa.github.io/">
   <title>Fariborz Taherkhani</title>
@@ -16,27 +16,114 @@
   <link rel="stylesheet" href="css/academicons.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather|Roboto+Mono">
   <link rel="stylesheet" href="css/hugo-academic.css">
+  
   <style>
-    .hero-summary { margin-top: 18px; font-size: 1.05em; line-height: 1.7; }
+    .hero-summary { margin-top: 18px; font-size: 1.03em; line-height: 1.75; }
     .focus-list { margin-top: 14px; padding-left: 20px; }
     .focus-list li { margin-bottom: 8px; }
+
     .project-card {
       background: #fff;
       border: 1px solid #e9ecef;
-      border-radius: 12px;
-      padding: 28px;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+      border-radius: 14px;
+      padding: 32px;
+      box-shadow: 0 8px 26px rgba(0,0,0,0.06);
     }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.35fr) minmax(320px, 0.95fr);
+      gap: 28px;
+      align-items: start;
+    }
+
+    .project-title {
+      margin-top: 0;
+      margin-bottom: 10px;
+      line-height: 1.18;
+    }
+
     .project-meta {
       color: #666;
-      font-size: 0.95em;
-      margin: 8px 0 18px 0;
+      font-size: 0.97em;
+      margin: 0 0 20px 0;
     }
-    .result-list { padding-left: 20px; }
-    .result-list li { margin-bottom: 8px; }
+
+    .project-lead {
+      font-size: 1.04em;
+      line-height: 1.78;
+      margin-bottom: 16px;
+    }
+
+    .section-spacer { margin-top: 24px; }
+
+    .result-list,
+    .project-list {
+      padding-left: 22px;
+      margin-bottom: 0;
+    }
+
+    .result-list li,
+    .project-list li { margin-bottom: 10px; }
+
+    .btn-row {
+      margin-top: 24px;
+      margin-bottom: 18px;
+    }
+
     .btn-row a { margin-right: 10px; margin-bottom: 10px; }
-    .section-spacer { margin-top: 20px; }
+
+    .media-card {
+      background: #fafafa;
+      border: 1px solid #ececec;
+      border-radius: 12px;
+      padding: 16px;
+    }
+
+    .media-card video,
+    .media-card img {
+      width: 100%;
+      border-radius: 10px;
+      display: block;
+      background: #111;
+    }
+
+    .media-caption {
+      margin-top: 12px;
+      color: #666;
+      font-size: 0.94em;
+      line-height: 1.6;
+    }
+
+    .metric-box {
+      margin-top: 16px;
+      padding: 14px 16px;
+      border-radius: 10px;
+      background: #f6f8fa;
+      border: 1px solid #e8ebef;
+    }
+
+    .metric-box strong {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .metric-box ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .metric-box li {
+      margin-bottom: 6px;
+    }
+
+    @media (max-width: 991px) {
+      .project-grid {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
+
 </head>
 <body id="top">
 
@@ -92,20 +179,27 @@
 
       <div class="col-xs-12 col-md-8" itemprop="description">
         <h1>About</h1>
+        
         <p class="hero-summary">
-          I am a Senior AI Engineer with a PhD in Computer Science, focused on multimodal AI systems, LLM/VLM pipelines, representation learning, generative modeling, transformer architectures, and production-scale perception systems. My work spans research and deployment across vision-language systems, controllable 3D generative models, robotics perception, and reinforcement learning. I build end-to-end ML pipelines for real-world environments, from synthetic data generation and distributed training to model optimization and low-latency deployment under strict hardware constraints. I am particularly interested in systems that connect strong modeling ideas with practical decision-making, reasoning, and robust closed-loop behavior.
+          I am a Senior AI Engineer with a PhD in Computer Science, focused on multimodal AI systems,
+          LLM/VLM pipelines, generative modeling, transformer architectures, robotics perception, and
+          offline reinforcement learning. My work spans research and deployment: from controllable 3D
+          generative models and vision-language systems to distributed training, low-latency inference,
+          and robust closed-loop behavior in real-world environments.
         </p>
-      
+
         <ul class="focus-list">
+
           <li>LLM, VLM, and multimodal foundation-model systems</li>
           <li>Perception for robotics and real-time deployment</li>
           <li>Generative modeling and 3D vision</li>
-          <li> Reinforcement learning and sequential decision systems</li>
+          <li>Offline reinforcement learning and sequential decision systems</li>
         </ul>
       </div>
     </div>
   </div>
 </section>
+
 
 <section class="home-section" id="offline-rl">
   <div class="container">
@@ -113,30 +207,67 @@
       <div class="col-xs-12 col-md-12 section-heading" align="center">
         <h1>Featured Project</h1>
       </div>
+
       <div class="col-xs-12 col-md-12">
         <div class="project-card">
-          <h2>Stable Training Losses Do Not Guarantee Good Closed-Loop Control in Offline RL</h2>
-          <div class="project-meta">
-            BC · IQL · CQL · MuJoCo Walker2d / Hopper / Kitchen · Minari · d3rlpy · PyTorch
+          <div class="project-grid">
+            <div>
+              <h2 class="project-title">Stable Training Losses Do Not Guarantee Good Closed-Loop Control in Offline RL</h2>
+              <div class="project-meta">
+                BC · IQL · CQL · MuJoCo Walker2d / Hopper / Kitchen · Minari · d3rlpy · PyTorch
+              </div>
+
+              <p class="project-lead">
+                I built an offline reinforcement learning benchmark to study a practical failure mode in
+                sequential decision systems: stable or smooth offline training does not necessarily translate
+                to strong closed-loop behavior at rollout time. The project compares Behavior Cloning (BC),
+                Implicit Q-Learning (IQL), and Conservative Q-Learning (CQL) on MuJoCo locomotion and
+                manipulation tasks.
+              </p>
+
+              <p class="project-lead">
+                The main result was that BC remained a strong support-preserving baseline, IQL underperformed
+                in my setup despite apparently reasonable training behavior, and best-checkpoint CQL produced
+                the strongest Walker2d result once periodic evaluation and checkpoint-based model selection
+                were used. This project emphasizes a key offline RL lesson: rollout evaluation matters more
+                than training losses alone.
+              </p>
+
+              <div class="btn-row">
+                <a class="btn btn-primary btn-outline" href="https://github.com/Ulteraa">Code</a>
+                <a class="btn btn-primary btn-outline" href="#">Demo Video</a>
+                <a class="btn btn-primary btn-outline" href="#">Technical Writeup</a>
+              </div>
+            </div>
+
+            <div>
+              <div class="media-card">
+                <video controls autoplay muted loop playsinline poster="img/image2.jpg">
+                  <source src="media/walker_cql_demo.mp4" type="video/mp4">
+                  Your browser does not support HTML5 video. Replace media/walker_cql_demo.mp4 with your exported Walker2d demo.
+                </video>
+                <div class="media-caption">
+                  Walker2d rollout from the best CQL checkpoint. The strongest controller emerged from periodic
+                  evaluation and checkpoint selection, illustrating that stable training losses alone do not
+                  guarantee strong closed-loop performance in offline RL.
+                </div>
+
+                <div class="metric-box">
+                  <strong>Representative observations</strong>
+                  <ul>
+                    <li>BC produced a strong and visually convincing baseline.</li>
+                    <li>IQL underperformed significantly on Walker2d in this setup.</li>
+                    <li>CQL was the strongest offline RL method among the tested approaches.</li>
+                    <li>Best-checkpoint selection was critical because later checkpoints from the same run could degrade.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
-
-          <p>
-            I built an offline reinforcement learning benchmark to study a practical failure mode in sequential
-            decision systems: stable or smooth offline training does not necessarily translate to strong closed-loop
-            behavior at rollout time. The project compares Behavior Cloning (BC), Implicit Q-Learning (IQL), and
-            Conservative Q-Learning (CQL) on MuJoCo locomotion and manipulation tasks.
-          </p>
-
-          <p>
-            The main result was that BC remained a strong support-preserving baseline, IQL underperformed in my
-            setup despite apparently reasonable training behavior, and best-checkpoint CQL produced the strongest
-            Walker2d result once periodic evaluation and checkpoint-based model selection were used. This project
-            emphasizes a key offline RL lesson: rollout evaluation matters more than training losses alone.
-          </p>
 
           <div class="section-spacer">
             <h3>What I implemented</h3>
-            <ul class="result-list">
+            <ul class="project-list">
               <li>Offline RL training and evaluation pipeline for MuJoCo locomotion and manipulation tasks</li>
               <li>BC, IQL, and CQL baselines with periodic checkpoint evaluation</li>
               <li>Normalized scoring, rollout benchmarking, and rendered Walker2d policy videos</li>
@@ -153,18 +284,6 @@
               <li>Best-checkpoint selection was critical because later checkpoints from the same run could degrade.</li>
             </ul>
           </div>
-
-          <div class="section-spacer btn-row">
-            <a class="btn btn-primary btn-outline" href="https://github.com/Ulteraa">Code</a>
-            <a class="btn btn-primary btn-outline" href="#">Demo Video</a>
-            <a class="btn btn-primary btn-outline" href="#">Technical Writeup</a>
-          </div>
-
-          <p class="project-meta">
-            Suggested demo caption: Walker2d rollout from the best CQL checkpoint. The strongest controller emerged
-            from periodic evaluation and checkpoint selection, illustrating that stable training losses alone do not
-            guarantee strong closed-loop performance in offline RL.
-          </p>
         </div>
       </div>
     </div>
@@ -172,6 +291,7 @@
 </section>
 
 <footer class="site-footer">
+
   <div class="container">
     <p class="powered-by">
       <span class="pull-right">
