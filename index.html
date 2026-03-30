@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="author" content="Fariborz Taherkhani">
-  <meta name="description" content="Fariborz Taherkhani — Senior AI Engineer working on multimodal AI systems, LLM/VLM pipelines, generative models, robotics perception, and Reinforcement learning.">
+  <meta name="description" content="Fariborz Taherkhani — Senior AI Engineer working on multimodal AI systems, LLM/VLM pipelines, generative models, robotics perception, and reinforcement learning.">
   <meta name="theme-color" content="#ffffff">
   <link rel="canonical" href="https://ulteraa.github.io/">
   <title>Fariborz Taherkhani</title>
@@ -16,16 +16,20 @@
   <link rel="stylesheet" href="css/academicons.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather|Roboto+Mono">
   <link rel="stylesheet" href="css/hugo-academic.css">
-  
+
   <style>
     .hero-summary { margin-top: 18px; font-size: 1.03em; line-height: 1.75; }
     .focus-list { margin-top: 14px; padding-left: 20px; }
     .focus-list li { margin-bottom: 8px; }
-    #bio.home-section {
-    padding-bottom: 20px !important;}
 
-    #offline-rl.home-section {
-    padding-top: 20px !important;}
+    #bio.home-section { padding-bottom: 20px !important; }
+    #featured-projects.home-section { padding-top: 20px !important; }
+
+    .project-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
 
     .project-card {
       background: #fff;
@@ -60,17 +64,6 @@
       margin-bottom: 16px;
     }
 
-    .section-spacer { margin-top: 24px; }
-
-    .result-list,
-    .project-list {
-      padding-left: 22px;
-      margin-bottom: 0;
-    }
-
-    .result-list li,
-    .project-list li { margin-bottom: 10px; }
-
     .btn-row {
       margin-top: 24px;
       margin-bottom: 18px;
@@ -100,35 +93,12 @@
       line-height: 1.6;
     }
 
-    .metric-box {
-      margin-top: 16px;
-      padding: 14px 16px;
-      border-radius: 10px;
-      background: #f6f8fa;
-      border: 1px solid #e8ebef;
-    }
-
-    .metric-box strong {
-      display: block;
-      margin-bottom: 8px;
-    }
-
-    .metric-box ul {
-      margin: 0;
-      padding-left: 18px;
-    }
-
-    .metric-box li {
-      margin-bottom: 6px;
-    }
-
     @media (max-width: 991px) {
       .project-grid {
         grid-template-columns: 1fr;
       }
     }
   </style>
-
 </head>
 <body id="top">
 
@@ -147,9 +117,9 @@
     <div class="collapse navbar-collapse" id="navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li class="nav-item"><a href="#top">Home</a></li>
-        <li class="nav-item"><a href="https://www.linkedin.com/in/fariborz-taherkhani-89515370/">LinkedIn</a></li>
-        <li class="nav-item"><a href="https://github.com/Ulteraa">GitHub</a></li>
-        <li class="nav-item"><a href="https://scholar.google.com/citations?user=Lk8MgHIAAAAJ&amp;hl=en">Google Scholar</a></li>
+        <li class="nav-item"><a href="https://www.linkedin.com/in/fariborz-taherkhani-89515370/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li class="nav-item"><a href="https://github.com/Ulteraa" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li class="nav-item"><a href="https://scholar.google.com/citations?user=Lk8MgHIAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a></li>
       </ul>
     </div>
   </div>
@@ -167,20 +137,10 @@
             <h3>Multimodal Systems · Vision · Generative Models · Intelligent Agents</h3>
           </div>
           <ul class="social-icon">
-            <li>
-              <a href="mailto:fariborztaherkhani@gmail.com"><i class="fa fa-envelope big-icon" aria-hidden="true"></i></a>
-            </li>
-            <li>
-              <a href="https://scholar.google.com/citations?user=Lk8MgHIAAAAJ&amp;hl=en"><i class="ai ai-google-scholar big-icon" aria-hidden="true"></i></a>
-            </li>
-            <li>
-              <a href="https://github.com/Ulteraa"><i class="fa fa-github big-icon" aria-hidden="true"></i></a>
-            </li>
-          <li>
-            <a href="https://www.linkedin.com/in/fariborz-taherkhani-89515370/" target="_blank" rel="noopener noreferrer">
-              <i class="fa fa-linkedin big-icon" aria-hidden="true"></i>
-            </a>
-          </li>
+            <li><a href="mailto:fariborztaherkhani@gmail.com"><i class="fa fa-envelope big-icon" aria-hidden="true"></i></a></li>
+            <li><a href="https://scholar.google.com/citations?user=Lk8MgHIAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer"><i class="ai ai-google-scholar big-icon" aria-hidden="true"></i></a></li>
+            <li><a href="https://github.com/Ulteraa" target="_blank" rel="noopener noreferrer"><i class="fa fa-github big-icon" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/fariborz-taherkhani-89515370/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin big-icon" aria-hidden="true"></i></a></li>
           </ul>
         </div>
       </div>
@@ -189,17 +149,15 @@
 
       <div class="col-xs-12 col-md-8" itemprop="description">
         <h1>About</h1>
-        
         <p class="hero-summary">
           I am a Senior AI Engineer with a PhD in Computer Science, focused on multimodal AI systems,
           LLM/VLM pipelines, generative modeling, transformer architectures, robotics perception, and
-          Reinforcement learning. My work spans research and deployment: from controllable 3D
+          reinforcement learning. My work spans research and deployment: from controllable 3D
           generative models and vision-language systems to distributed training, low-latency inference,
           and robust closed-loop behavior in real-world environments.
         </p>
 
         <ul class="focus-list">
-
           <li>LLM, VLM, and multimodal foundation-model systems</li>
           <li>Perception for robotics and real-time deployment</li>
           <li>Generative modeling and 3D vision</li>
@@ -210,255 +168,151 @@
   </div>
 </section>
 
-
-<section class="home-section" id="offline-rl">
+<section class="home-section" id="featured-projects">
   <div class="container">
     <div class="row">
-         <div class="col-xs-12 col-md-12 section-heading">
-          <h1 style="text-align: left;">Featured Projects</h1>
-        </div>
-
-      <div class="col-xs-12 col-md-12">
-        <div class="project-card">
-          <div class="project-grid">
-            <div>
-              <h2 class="project-title">Stable Training Losses Do Not Guarantee Good Closed-Loop Control in Offline RL</h2>
-              <div class="project-meta">
-                BC · IQL · CQL · MuJoCo Walker2d / Hopper / Kitchen · Minari · d3rlpy · PyTorch
-              </div>
-
-              <p class="project-lead">
-                I built an offline reinforcement learning benchmark to study a practical failure mode in
-                sequential decision systems: stable or smooth offline training does not necessarily translate
-                to strong closed-loop behavior at rollout time. The project compares Behavior Cloning (BC),
-                Implicit Q-Learning (IQL), and Conservative Q-Learning (CQL) on MuJoCo locomotion and
-                manipulation tasks.
-              </p>
-               <!--
-               <p class="project-lead">
-                The main result was that BC remained a strong support-preserving baseline, IQL underperformed
-                in my setup despite apparently reasonable training behavior, and best-checkpoint CQL produced
-                the strongest Walker2d result once periodic evaluation and checkpoint-based model selection
-                were used. This project emphasizes a key offline RL lesson: rollout evaluation matters more
-                than training losses alone.
-              </p>
-              -->
-
-              <div class="btn-row">
-                <a class="btn btn-primary btn-outline" href="https://github.com/Ulteraa">Code</a>
-                <a class="btn btn-primary btn-outline" href="#">Demo Video</a>
-                <a class="btn btn-primary btn-outline" href="#">Technical Writeup</a>
-              </div>
-            </div>
-
-            <div>
-              <div class="media-card">
-                <video controls autoplay muted loop playsinline poster="img/image2.jpg">
-                  <source src="media/walker_video.mp4" type="video/mp4">
-                  Your browser does not support HTML5 video. Replace media/walker_video.mp4 with your exported Walker2d demo.
-                </video>
-                <div class="media-caption">
-                 Walker2d rollout from the best CQL checkpoint, selected through periodic evaluation—showing that stable training loss alone does not guarantee strong closed-loop offline RL performance.
-                </div>
-                <!--
-                <div class="metric-box">
-                  <strong>Representative observations</strong>
-                  <ul>
-                    <li>BC produced a strong and visually convincing baseline.</li>
-                    <li>IQL underperformed significantly on Walker2d in this setup.</li>
-                    <li>CQL was the strongest offline RL method among the tested approaches.</li>
-                    <li>Best-checkpoint selection was critical because later checkpoints from the same run could degrade.</li>
-                  </ul>
-                </div>
-                -->
-              </div>
-            </div>
-          </div>
-           <!--
-          <div class="section-spacer">
-            <h3>What I implemented</h3>
-            <ul class="project-list">
-              <li>Offline RL training and evaluation pipeline for MuJoCo locomotion and manipulation tasks</li>
-              <li>BC, IQL, and CQL baselines with periodic checkpoint evaluation</li>
-              <li>Normalized scoring, rollout benchmarking, and rendered Walker2d policy videos</li>
-              <li>Checkpoint-based model selection to capture the best closed-loop controller instead of the final training state</li>
-            </ul>
-          </div>
-          
-
-          <div class="section-spacer">
-            <h3>Key findings</h3>
-            <ul class="result-list">
-              <li>Behavior Cloning produced a strong and visually convincing baseline.</li>
-              <li>IQL underperformed significantly on Walker2d in this setup.</li>
-              <li>CQL was the strongest offline RL method among the tested approaches.</li>
-              <li>Best-checkpoint selection was critical because later checkpoints from the same run could degrade.</li>
-            </ul>
-          </div>
-        </div>
+      <div class="col-xs-12 col-md-12 section-heading">
+        <h1 style="text-align: left;">Featured Projects</h1>
       </div>
-    </div>
-  </div>
-  -->        
-<h2>YOLOv8+: Unified Detection, Segmentation, and Pose Estimation</h2>
-<div class="project-meta">
-  Ultralytics · PoseSegment · Detection / Instance Segmentation / Pose · ONNX / TorchScript / TensorRT
-</div>
 
-<p>
-  YOLOv8+ extends the Ultralytics framework with a new <strong>pose-segment</strong> task that jointly performs
-  object detection, instance segmentation, and pose estimation in a single forward pass. Instead of maintaining
-  separate models or multi-stage pipelines, I modified the training and inference stack to support a unified
-  multitask perception workflow.
-</p>
-
-<p>
-  The project required coordinated changes across the model head, dataset handling, collate logic, loss design,
-  metrics, and export pipeline. I also extended the workflow to support deployment-oriented export formats
-  including ONNX, TorchScript, and TensorRT, making the project both a modeling contribution and a practical
-  systems integration effort.
-</p>
-<div style="border: 1px solid #e9ecef; border-radius: 12px; padding: 16px; background: #fafafa;">
-  <video
-    autoplay
-    muted
-    loop
-    playsinline
-    preload="metadata"
-    poster="img/pose_segment_poster_v2.png"
-    style="width: 100%; border-radius: 10px; display: block;"
-  >
-    <source src="img/pose_segment_homepage_demo_v2.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-
-  <p class="project-meta" style="margin-top: 14px;">
-    YOLOv8+ pose-segment demo. A unified multitask perception model that jointly predicts
-    detection, instance masks, and human keypoints, with export-ready workflows for ONNX,
-    TorchScript, and TensorRT.
-  </p>
-</div>
-          
-<!--
-<div class="section-spacer">
-  <h3>What I implemented</h3>
-  <ul class="result-list">
-    <li>Introduced a new <strong>pose-segment</strong> task for joint detection, segmentation, and pose estimation.</li>
-    <li>Built a unified <strong>PoseSegment head</strong> to predict boxes, masks, and keypoints in one forward pass.</li>
-    <li>Extended the data pipeline to load segmentation masks and keypoints together.</li>
-    <li>Designed a combined multitask loss and evaluation flow for joint training.</li>
-    <li>Added export and inference support for ONNX, TorchScript, and TensorRT deployment workflows.</li>
-  </ul>
-</div>
-
-<div class="section-spacer">
-  <h3>Why it matters</h3>
-  <ul class="result-list">
-    <li>Replaces separate-task pipelines with a single integrated perception model.</li>
-    <li>Simplifies training and inference while preserving multiple output types.</li>
-    <li>Connects research modeling with deployment-oriented inference workflows.</li>
-  </ul>
-</div>
--->
-<div class="section-spacer btn-row">
-  <a class="btn btn-primary btn-outline" href="#">Code</a>
-  <a class="btn btn-primary btn-outline" href="#">Report</a>
-  <a class="btn btn-primary btn-outline" href="#">Demo Video</a>
-  <a class="btn btn-primary btn-outline" href="#">Gallery</a>
-</div>
-<!--
-<p class="project-meta">
-  Suggested demo caption: YOLOv8+ pose-segment demo. A unified multitask model that jointly predicts
-  detection, instance masks, and human keypoints, with export-ready workflows for ONNX, TorchScript,
-  and TensorRT.
-</p>
--->
-
- <section class="home-section" id="maskrcnn-tensorrt">
-  <div class="container">
-    <div class="row">
       <div class="col-xs-12 col-md-12">
-        <div class="project-card">
-         <div class="project-grid">
+        <div class="project-stack">
+
+          <div class="project-card" id="offline-rl">
+            <div class="project-grid">
               <div>
-              <h2>TensorRT Conversion for Joint Segmentation and Pose Estimation in Mask R-CNN</h2>
-              <div class="project-meta">
-                Detectron2 · Mask R-CNN · Instance Segmentation / Pose Estimation · ONNX · TensorRT · NVIDIA GPUs
-              </div>
+                <h2 class="project-title">Stable Training Losses Do Not Guarantee Good Closed-Loop Control in Offline RL</h2>
+                <div class="project-meta">
+                  BC · IQL · CQL · MuJoCo Walker2d / Hopper / Kitchen · Minari · d3rlpy · PyTorch
+                </div>
 
-              <p>
-                This project addressed a practical deployment gap in multi-task perception systems. While
-                TensorRT conversion for Detectron2 instance segmentation is more commonly available, support
-                for <strong>joint instance segmentation and keypoint pose estimation</strong> is far less documented.
-                I built a deployment workflow that preserved boxes, masks, and keypoints together in a
-                TensorRT-based inference pipeline.
-              </p>
-
-              <p>
-                The work required coordinated changes across model export, ONNX graph generation, keypoint-aware
-                output handling, tensor I/O binding, inference, and visualization. The result was a practical
-                conversion path for deploying a Mask R-CNN model that jointly performs segmentation and pose
-                estimation instead of dropping keypoints during optimization.
-              </p>
-            <!--
-              <div class="section-spacer">
-                <h3>What I implemented</h3>
-                <ul class="result-list">
-                  <li>Extended the Detectron2 export workflow for joint segmentation and pose estimation.</li>
-                  <li>Added ONNX graph processing and output logic for masks, boxes, and keypoint predictions.</li>
-                  <li>Built TensorRT engine generation and inference support for multi-task outputs.</li>
-                  <li>Updated tensor I/O binding, postprocessing, and visualization to preserve keypoints during deployment.</li>
-                </ul>
-              </div>
-
-              <div class="section-spacer">
-                <h3>Why it matters</h3>
-                <ul class="result-list">
-                  <li>Closes a tooling gap between research models and deployment-ready perception systems.</li>
-                  <li>Preserves pose outputs alongside segmentation and detection in optimized inference workflows.</li>
-                  <li>Demonstrates practical deployment engineering for multi-output computer vision models.</li>
-                </ul>
-              </div>
-              -->
-              <div class="section-spacer btn-row">
-                <a class="btn btn-primary btn-outline" href="#">Code</a>
-                <a class="btn btn-primary btn-outline" href="#">Report</a>
-                <a class="btn btn-primary btn-outline" href="#">Demo Video</a>
-                <a class="btn btn-primary btn-outline" href="#">Gallery</a>
-              </div>
-            </div>
-            <div>
-              <div style="border: 1px solid #e9ecef; border-radius: 12px; padding: 16px; background: #fafafa;">
-                <video
-                  autoplay
-                  muted
-                  loop
-                  playsinline
-                  preload="metadata"
-                  poster="img/maskrcnn_tensorrt_poster_v2.png"
-                  style="width: 100%; border-radius: 10px; display: block;"
-                >
-                  <source src="img/maskrcnn_tensorrt_homepage_demo_v2.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-
-                <p class="project-meta" style="margin-top: 14px;">
-                  Mask R-CNN TensorRT demo. Joint segmentation and keypoint pose estimation preserved
-                  through a custom export and deployment workflow for TensorRT-based inference.
+                <p class="project-lead">
+                  I built an offline reinforcement learning benchmark to study a practical failure mode in
+                  sequential decision systems: stable or smooth offline training does not necessarily translate
+                  to strong closed-loop behavior at rollout time. The project compares Behavior Cloning (BC),
+                  Implicit Q-Learning (IQL), and Conservative Q-Learning (CQL) on MuJoCo locomotion and
+                  manipulation tasks.
                 </p>
+
+                <div class="btn-row">
+                  <a class="btn btn-primary btn-outline" href="https://github.com/Ulteraa" target="_blank" rel="noopener noreferrer">Code</a>
+                  <a class="btn btn-primary btn-outline" href="#">Demo Video</a>
+                  <a class="btn btn-primary btn-outline" href="#">Technical Writeup</a>
+                </div>
+              </div>
+
+              <div>
+                <div class="media-card">
+                  <video controls autoplay muted loop playsinline poster="img/image2.jpg">
+                    <source src="media/walker_video.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                  </video>
+                  <div class="media-caption">
+                    Walker2d rollout from the best CQL checkpoint, selected through periodic evaluation—showing that stable training loss alone does not guarantee strong closed-loop offline RL performance.
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+
+          <div class="project-card" id="yolov8-plus">
+            <div class="project-grid">
+              <div>
+                <h2 class="project-title">YOLOv8+: Unified Detection, Segmentation, and Pose Estimation</h2>
+                <div class="project-meta">
+                  Ultralytics · PoseSegment · Detection / Instance Segmentation / Pose · ONNX / TorchScript / TensorRT
+                </div>
+
+                <p class="project-lead">
+                  YOLOv8+ extends the Ultralytics framework with a new <strong>pose-segment</strong> task that jointly performs
+                  object detection, instance segmentation, and pose estimation in a single forward pass. Instead of maintaining
+                  separate models or multi-stage pipelines, I modified the training and inference stack to support a unified
+                  multitask perception workflow.
+                </p>
+
+                <p class="project-lead">
+                  The project required coordinated changes across the model head, dataset handling, collate logic, loss design,
+                  metrics, and export pipeline. I also extended the workflow to support deployment-oriented export formats
+                  including ONNX, TorchScript, and TensorRT, making the project both a modeling contribution and a practical
+                  systems integration effort.
+                </p>
+
+                <div class="btn-row">
+                  <a class="btn btn-primary btn-outline" href="#">Code</a>
+                  <a class="btn btn-primary btn-outline" href="#">Report</a>
+                  <a class="btn btn-primary btn-outline" href="#">Demo Video</a>
+                  <a class="btn btn-primary btn-outline" href="#">Gallery</a>
+                </div>
+              </div>
+
+              <div>
+                <div class="media-card">
+                  <video autoplay muted loop playsinline preload="metadata" poster="img/pose_segment_poster_v2.png">
+                    <source src="img/pose_segment_homepage_demo_v2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                  <div class="media-caption">
+                    YOLOv8+ pose-segment demo. A unified multitask perception model that jointly predicts
+                    detection, instance masks, and human keypoints, with export-ready workflows for ONNX,
+                    TorchScript, and TensorRT.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" id="maskrcnn-tensorrt">
+            <div class="project-grid">
+              <div>
+                <h2 class="project-title">TensorRT Conversion for Joint Segmentation and Pose Estimation in Mask R-CNN</h2>
+                <div class="project-meta">
+                  Detectron2 · Mask R-CNN · Instance Segmentation / Pose Estimation · ONNX · TensorRT · NVIDIA GPUs
+                </div>
+
+                <p class="project-lead">
+                  This project addressed a practical deployment gap in multi-task perception systems. While
+                  TensorRT conversion for Detectron2 instance segmentation is more commonly available, support
+                  for <strong>joint instance segmentation and keypoint pose estimation</strong> is far less documented.
+                  I built a deployment workflow that preserved boxes, masks, and keypoints together in a
+                  TensorRT-based inference pipeline.
+                </p>
+
+                <p class="project-lead">
+                  The work required coordinated changes across model export, ONNX graph generation, keypoint-aware
+                  output handling, tensor I/O binding, inference, and visualization. The result was a practical
+                  conversion path for deploying a Mask R-CNN model that jointly performs segmentation and pose
+                  estimation instead of dropping keypoints during optimization.
+                </p>
+
+                <div class="btn-row">
+                  <a class="btn btn-primary btn-outline" href="#">Code</a>
+                  <a class="btn btn-primary btn-outline" href="#">Report</a>
+                  <a class="btn btn-primary btn-outline" href="#">Demo Video</a>
+                  <a class="btn btn-primary btn-outline" href="#">Gallery</a>
+                </div>
+              </div>
+
+              <div>
+                <div class="media-card">
+                  <video autoplay muted loop playsinline preload="metadata" poster="img/maskrcnn_tensorrt_poster_v2.png">
+                    <source src="img/maskrcnn_tensorrt_homepage_demo_v2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                  <div class="media-caption">
+                    Mask R-CNN TensorRT demo. Joint segmentation and keypoint pose estimation preserved through a custom export and deployment workflow for TensorRT-based inference.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
-
     </div>
   </div>
-          
 </section>
 
 <footer class="site-footer">
-
   <div class="container">
     <p class="powered-by">
       <span class="pull-right">
