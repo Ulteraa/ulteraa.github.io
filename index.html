@@ -373,6 +373,92 @@
   and TensorRT.
 </p>
 -->
+
+ <section class="home-section" id="maskrcnn-tensorrt">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-12 section-heading">
+        <h1 style="text-align: left;">Featured Project</h1>
+      </div>
+
+      <div class="col-xs-12 col-md-12">
+        <div class="project-card">
+          <div class="row">
+            <div class="col-xs-12 col-md-7">
+              <h2>TensorRT Conversion for Joint Segmentation and Pose Estimation in Mask R-CNN</h2>
+              <div class="project-meta">
+                Detectron2 · Mask R-CNN · Instance Segmentation / Pose Estimation · ONNX · TensorRT · NVIDIA GPUs
+              </div>
+
+              <p>
+                This project addressed a practical deployment gap in multi-task perception systems. While
+                TensorRT conversion for Detectron2 instance segmentation is more commonly available, support
+                for <strong>joint instance segmentation and keypoint pose estimation</strong> is far less documented.
+                I built a deployment workflow that preserved boxes, masks, and keypoints together in a
+                TensorRT-based inference pipeline.
+              </p>
+
+              <p>
+                The work required coordinated changes across model export, ONNX graph generation, keypoint-aware
+                output handling, tensor I/O binding, inference, and visualization. The result was a practical
+                conversion path for deploying a Mask R-CNN model that jointly performs segmentation and pose
+                estimation instead of dropping keypoints during optimization.
+              </p>
+
+              <div class="section-spacer">
+                <h3>What I implemented</h3>
+                <ul class="result-list">
+                  <li>Extended the Detectron2 export workflow for joint segmentation and pose estimation.</li>
+                  <li>Added ONNX graph processing and output logic for masks, boxes, and keypoint predictions.</li>
+                  <li>Built TensorRT engine generation and inference support for multi-task outputs.</li>
+                  <li>Updated tensor I/O binding, postprocessing, and visualization to preserve keypoints during deployment.</li>
+                </ul>
+              </div>
+
+              <div class="section-spacer">
+                <h3>Why it matters</h3>
+                <ul class="result-list">
+                  <li>Closes a tooling gap between research models and deployment-ready perception systems.</li>
+                  <li>Preserves pose outputs alongside segmentation and detection in optimized inference workflows.</li>
+                  <li>Demonstrates practical deployment engineering for multi-output computer vision models.</li>
+                </ul>
+              </div>
+
+              <div class="section-spacer btn-row">
+                <a class="btn btn-primary btn-outline" href="#">Code</a>
+                <a class="btn btn-primary btn-outline" href="#">Report</a>
+                <a class="btn btn-primary btn-outline" href="#">Demo Video</a>
+                <a class="btn btn-primary btn-outline" href="#">Gallery</a>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-md-5">
+              <div style="border: 1px solid #e9ecef; border-radius: 12px; padding: 16px; background: #fafafa;">
+                <video
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  preload="metadata"
+                  poster="img/maskrcnn_tensorrt_poster_v2.png"
+                  style="width: 100%; border-radius: 10px; display: block;"
+                >
+                  <source src="img/maskrcnn_tensorrt_homepage_demo_v2.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+
+                <p class="project-meta" style="margin-top: 14px;">
+                  Mask R-CNN TensorRT demo. Joint segmentation and keypoint pose estimation preserved
+                  through a custom export and deployment workflow for TensorRT-based inference.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
           
 </section>
 
