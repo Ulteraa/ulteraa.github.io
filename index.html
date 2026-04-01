@@ -346,6 +346,50 @@
           </div>
         </div>
         </div> 
+
+          <div class="project-card" id="safe-o2o-robotics">
+            <div class="project-grid">
+              <div>
+                <h2 class="project-title">Safe Offline-to-Online RL for Vision-Based Robotic Manipulation</h2>
+                <div class="project-meta">
+                  RoboMimic · Vision-Based Manipulation · Actor-Critic · BC Prior · Critic Ensemble · Safety-Gated Online Adaptation
+                </div>
+          
+                <p class="project-lead">
+                  This project explores a practical framework for <strong>safe offline-to-online reinforcement learning</strong>
+                  in vision-based robotic manipulation. The policy starts from offline demonstrations with image observations
+                  and robot proprioception, then adapts online under strict safety constraints instead of relying on unrestricted exploration.
+                </p>
+          
+                <p class="project-lead">
+                  The method combines visual scene encoding, actor-critic learning, a behavioral-cloning prior, and
+                  uncertainty-aware action filtering. A critic ensemble estimates both value and uncertainty, while a safety
+                  module regularizes the actor toward dataset-supported behavior offline and filters risky actions during deployment.
+                  Online adaptation then gradually relaxes these constraints, enabling cautious improvement under distribution shift.
+                </p>
+          
+                <div class="btn-row">
+                  <a class="btn btn-primary btn-outline" href="#">Code</a>
+                  <a class="btn btn-primary btn-outline" href="#">Report</a>
+                  <a class="btn btn-primary btn-outline" href="#">Demo Video</a>
+                  <a class="btn btn-primary btn-outline" href="#">Project Page</a>
+                </div>
+              </div>
+          
+              <div>
+                <div class="media-card">
+                  <video autoplay muted loop playsinline preload="metadata" poster="img/safe_o2o_robotics_poster.png">
+                    <source src="img/rollout_v3_actor_20.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                  <div class="media-caption">
+                    Safe offline-to-online manipulation rollout. An offline-trained visual policy adapts online through
+                    uncertainty-aware action filtering and conservative policy updates, improving behavior while keeping exploration bounded by a safety prior.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
