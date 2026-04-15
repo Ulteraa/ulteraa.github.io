@@ -473,6 +473,50 @@
               </div>
             </div>
           </div>
+          <div class="project-card" id="hybrid-gs-sdf">
+            <div class="project-grid">
+              <div>
+                <h2 class="project-title">Hybrid Geometry-Aware Gaussian Splatting for Novel View Synthesis</h2>
+                <div class="project-meta">
+                  Gaussian Splatting · SDF · Novel View Synthesis · 3D Generative Modeling · CO3D · Unified 3D World Models
+                </div>
+          
+                <p class="project-lead">
+                  Built a custom unified training framework that combines <strong>Gaussian Splatting (GS)</strong> with an
+                  image-conditioned <strong>Signed Distance Function (SDF)</strong> branch for novel view synthesis. The system
+                  uses a shared trainable encoder, a GS rendering branch, and a geometry-aware SDF branch trained jointly in a
+                  single optimization loop.
+                </p>
+          
+                <p class="project-lead">
+                  A key insight from the project was that, for CO3D-style data, <strong>GS should remain the primary rendering backbone</strong>,
+                  while the SDF branch is more effective as a <strong>geometry prior / regularizer</strong> than as a standalone vanilla DeepSDF
+                  pipeline. The result was a working hybrid research prototype with promising novel-view rendering behavior and a practical
+                  step toward more unified 3D world models.
+                </p>
+          
+                <div class="btn-row">
+                  <a class="btn btn-primary btn-outline" href="#">Code</a>
+                  <a class="btn btn-primary btn-outline" href="#">Report</a>
+                  <a class="btn btn-primary btn-outline" href="#">Demo Video</a>
+                  <a class="btn btn-primary btn-outline" href="#">Project Page</a>
+                </div>
+              </div>
+          
+              <div>
+                <div class="media-card">
+                  <video autoplay muted loop playsinline preload="metadata" poster="img/gs_sdf_poster.png">
+                    <source src="img/path.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                  <div class="media-caption">
+                    Hybrid GS + SDF research prototype for novel view synthesis, using Gaussian Splatting as the rendering backbone
+                    and an implicit SDF branch as a geometry-aware regularizer.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
