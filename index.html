@@ -431,6 +431,48 @@
               </div>
             </div>
           </div>
+          <div class="project-card" id="bevfusion-refine">
+            <div class="project-grid">
+              <div>
+                <h2 class="project-title">Reliable Camera–LiDAR BEV Fusion with Proposal-Level 3D Box Refinement</h2>
+                <div class="project-meta">
+                  MMDetection3D · BEVFusion · nuScenes mini · Multimodal 3D Detection · Reliability-Aware Fusion · Object Refinement
+                </div>
+          
+                <p class="project-lead">
+                  Built a custom multimodal 3D detection research branch on top of <strong>MMDetection3D / BEVFusion</strong> for
+                  <strong>nuScenes mini</strong>. I replaced the stock BEV fusion block with a <strong>reliability-aware fusion module</strong>
+                  and added an <strong>object-level refinement head</strong> that samples local fused-BEV context around coarse proposals
+                  to predict residual corrections for 3D box geometry and motion.
+                </p>
+          
+                <p class="project-lead">
+                  The project involved architecture design, framework-level integration, training/debugging, and qualitative
+                  3D visualization of predicted boxes and point clouds. It was framed as a targeted systems improvement:
+                  diagnose where fusion helps semantics more than localization, then modify the model to address that gap directly.
+                </p>
+          
+                <div class="btn-row">
+                  <a class="btn btn-primary btn-outline" href="#">Code</a>
+                  <a class="btn btn-primary btn-outline" href="#">Report</a>
+                  <a class="btn btn-primary btn-outline" href="#">Demo Video</a>
+                  <a class="btn btn-primary btn-outline" href="#">Project Page</a>
+                </div>
+              </div>
+          
+              <div>
+                <div class="media-card">
+                  <video autoplay muted loop playsinline preload="metadata" poster="img/bevfusion_poster.png">
+                    <source src="img/objectrefine_ep4_rot.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                  <div class="media-caption">
+                    BEVFusion research prototype with reliability-aware fusion and proposal-level 3D box refinement on nuScenes mini.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
