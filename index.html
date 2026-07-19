@@ -119,6 +119,8 @@
     <div class="collapse navbar-collapse" id="navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li class="nav-item"><a href="#top">Home</a></li>
+        <li class="nav-item"><a href="#featured-projects">Projects</a></li>
+        <li class="nav-item"><a href="#research-case-studies">Research</a></li>
         <li class="nav-item"><a href="https://www.linkedin.com/in/fariborz-taherkhani-89515370/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
         <li class="nav-item"><a href="https://github.com/Ulteraa" target="_blank" rel="noopener noreferrer">GitHub</a></li>
         <li class="nav-item"><a href="https://scholar.google.com/citations?user=Lk8MgHIAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a></li>
@@ -598,6 +600,52 @@
                   Versioned evidence from repository artifacts across structure, semantics, reliability,
                   sensing, geometry, and deployment. Quality values are archived historical results;
                   the maintained pose path was smoke-tested on bundled video.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" id="weak-supervision-representation-learning">
+          <div class="project-grid">
+            <div>
+              <h2 class="project-title">When Optimal Transport Helps—and When It Does Not</h2>
+              <div class="project-meta">
+                Weak Supervision · Optimal Transport · Domain Alignment · Negative Results · Multi-Seed Evaluation · Reliability Diagnostics
+              </div>
+
+              <p class="project-lead">
+                I reframed a collection of weakly supervised prototypes around one systems question:
+                when should indirect supervision be solved with distribution alignment, and when is a
+                simpler representation safer? A CPU-only benchmark now separates rerunnable evidence
+                from historical dataset-dependent work and evaluates document geometry and unpaired
+                color transfer with explicit baselines, deterministic seeds, and numerical residuals.
+              </p>
+
+              <p class="project-lead">
+                On seven archived scripts, a weighted-centroid baseline outperformed compressed Sinkhorn
+                OT: <strong>100% versus 71.4% nearest-neighbor group agreement</strong> and
+                <strong>1.55× versus 1.07× group separation</strong>. For unpaired palette transfer,
+                low-regularization OT reduced palette JSD from <strong>0.401 to 0.274</strong>—a
+                <strong>31.8% reduction</strong> versus mean/std matching—but edge correlation fell from
+                <strong>0.996 to 0.854</strong>. The engineering outcome is an operating-point decision:
+                add alignment capacity only when its fit benefit justifies the structure it changes.
+              </p>
+
+              <div class="btn-row">
+                <a class="btn btn-primary btn-outline" href="https://github.com/Ulteraa/weak-supervision-representation-learning" target="_blank" rel="noopener noreferrer">Benchmark &amp; Research History</a>
+              </div>
+            </div>
+
+            <div>
+              <div class="media-card">
+                <img src="img/weak_supervision_portfolio_summary.jpg"
+                     alt="CPU benchmark comparing a centroid baseline with Sinkhorn optimal transport and showing the fit-structure tradeoff in unpaired palette transfer"
+                     loading="lazy" decoding="async">
+                <div class="media-caption">
+                  Current validation from bundled artifacts. Document groups are archive-defined and
+                  interpretive; palette metrics measure distribution fit rather than human preference.
+                  Dataset-dependent point-cloud, action, and captioning threads remain labeled historical.
                 </div>
               </div>
             </div>
