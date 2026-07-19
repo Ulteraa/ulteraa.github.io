@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="author" content="Fariborz Taherkhani">
+  <meta name="description" content="Fariborz Taherkhani — Senior AI Engineer working on multimodal AI systems, LLM/VLM pipelines, generative models, robotics perception, and reinforcement learning.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="canonical" href="https://ulteraa.github.io/">
+  <title>Fariborz Taherkhani</title>
+
+  <link rel="stylesheet" href="css/highlight.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/academicons.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather|Roboto+Mono">
+  <link rel="stylesheet" href="css/hugo-academic.css">
+
+  <style>
+    .hero-summary { margin-top: 18px; font-size: 1.03em; line-height: 1.75; }
+    .focus-list { margin-top: 14px; padding-left: 20px; }
+    .focus-list li { margin-bottom: 8px; }
+    .section-title-left { text-align: left; }
+
+    #bio.home-section { padding-bottom: 20px !important; }
+    #featured-projects.home-section { padding-top: 20px !important; }
+    #research-case-studies.home-section { padding-top: 20px !important; }
+
+    .project-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+
+    .project-card {
+      background: #fff;
+      border: 1px solid #e9ecef;
+      border-radius: 14px;
+      padding: 32px;
+      box-shadow: 0 8px 26px rgba(0,0,0,0.06);
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.35fr) minmax(320px, 0.95fr);
+      gap: 28px;
+      align-items: start;
+    }
+
+    .project-title {
+      margin-top: 0;
+      margin-bottom: 10px;
+      line-height: 1.18;
+    }
+
+    .project-meta {
+      color: #666;
+      font-size: 0.97em;
+      margin: 0 0 20px 0;
+    }
+
+    .project-lead {
+      font-size: 1.04em;
+      line-height: 1.78;
+      margin-bottom: 16px;
+    }
+
+    .btn-row {
+      margin-top: 24px;
+      margin-bottom: 18px;
+    }
+
+    .btn-row a { margin-right: 10px; margin-bottom: 10px; }
+
+    .media-card {
+      background: #fafafa;
+      border: 1px solid #ececec;
+      border-radius: 12px;
+      padding: 16px;
+    }
+
+    .media-card video,
+    .media-card img {
+      width: 100%;
+      border-radius: 10px;
+      display: block;
+      background: #111;
+    }
+
+    .media-caption {
+      margin-top: 12px;
+      color: #666;
+      font-size: 0.94em;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 991px) {
+      .project-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body id="top">
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#top">Fariborz Taherkhani</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="nav-item"><a href="#top">Home</a></li>
+        <li class="nav-item"><a href="https://www.linkedin.com/in/fariborz-taherkhani-89515370/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li class="nav-item"><a href="https://github.com/Ulteraa" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li class="nav-item"><a href="https://scholar.google.com/citations?user=Lk8MgHIAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="home-section" id="bio">
+  <div class="container">
+    <div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <div class="col-xs-12 col-md-4">
+        <div id="profile">
+          <div class="portrait" itemprop="image" style="background-image: url('img/profile.jpg');"></div>
+          <div class="portrait-title">
+            <h2 itemprop="name">Fariborz Taherkhani</h2>
+            <h3 itemprop="jobTitle">Senior AI Engineer</h3>
+            <h3>Multimodal Systems · Vision · Generative Models · Intelligent Agents</h3>
+          </div>
+          <ul class="social-icon">
+            <li><a href="mailto:fariborztaherkhani@gmail.com"><i class="fa fa-envelope big-icon" aria-hidden="true"></i></a></li>
+            <li><a href="https://scholar.google.com/citations?user=Lk8MgHIAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer"><i class="ai ai-google-scholar big-icon" aria-hidden="true"></i></a></li>
+            <li><a href="https://github.com/Ulteraa" target="_blank" rel="noopener noreferrer"><i class="fa fa-github big-icon" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/fariborz-taherkhani-89515370/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin big-icon" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="visible-sm visible-xs"></div>
+
+      <div class="col-xs-12 col-md-8" itemprop="description">
+        <h1>About </h1>
+        <p class="hero-summary">
+          I am a Senior AI Engineer with a PhD in Computer Science, focused on multimodal AI systems,
+          LLM/VLM pipelines, generative modeling, transformer architectures, robotics perception, and
+          reinforcement learning. My work spans research and deployment: from controllable 3D
+          generative models and vision-language systems to distributed training, low-latency inference,
+          and robust closed-loop behavior in real-world environments.
+        </p>
+          <ul class="focus-list">
+            <li>LLM, VLM, and multimodal foundation-model systems</li>
+            <li>Perception for robotics and real-time deployment</li>
+            <li>Generative modeling and 3D vision</li>
+            <li>Reinforcement learning and sequential decision systems</li>
+          </ul>
+          
+          <p style="margin-top: 18px; color: #60758a; font-size: 0.9em;">
+            <em>Note: I update this website periodically, so some of my recent work may not yet be included.</em>
+          </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+<section class="home-section" id="featured-projects">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-12 section-heading">
+        <h1 style="text-align: left;">Featured Projects</h1>
+      </div>
+
+      <div class="col-xs-12 col-md-12">
+        <div class="project-stack">
+
+          <div class="project-card" id="offline-rl">
+            <div class="project-grid">
+              <div>
+                <h2 class="project-title">Stable Training Losses Do Not Guarantee Good Closed-Loop Control in Offline RL</h2>
+                <div class="project-meta">
+                  BC · IQL · CQL · MuJoCo Walker2d / Hopper / Kitchen · Minari · d3rlpy · PyTorch
+                </div>
+
+                <p class="project-lead">
+                  I built an offline reinforcement learning benchmark to study a practical failure mode in
+                  sequential decision systems: stable or smooth offline training does not necessarily translate
+                  to strong closed-loop behavior at rollout time. The project compares Behavior Cloning (BC),
+                  Implicit Q-Learning (IQL), and Conservative Q-Learning (CQL) on MuJoCo locomotion and
+                  manipulation tasks.
+                </p>
+
+                <div class="btn-row">
+                  <a class="btn btn-primary btn-outline" href="https://github.com/Ulteraa/research-projects/tree/main/offline-rl-cql" target="_blank" rel="noopener noreferrer">Code</a>
+                </div>
+              </div>
+
+              <div>
+                <div class="media-card">
+                  <video controls autoplay muted loop playsinline poster="img/image2.jpg">
+                    <source src="media/walker_video.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                  </video>
+                  <div class="media-caption">
+                    Walker2d rollout from the best CQL checkpoint, selected through periodic evaluation—showing that stable training loss alone does not guarantee strong closed-loop offline RL performance.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" id="yolov8-plus">
+            <div class="project-grid">
+              <div>
+                <h2 class="project-title">YOLOv8+: Unified Detection, Segmentation, and Pose Estimation</h2>
+                <div class="project-meta">
+                  Ultralytics · PoseSegment · Detection / Instance Segmentation / Pose · ONNX / TorchScript / TensorRT
+                </div>
+
+                <p class="project-lead">
+                  YOLOv8+ extends the Ultralytics framework with a new <strong>pose-segment</strong> task that jointly performs
+                  object detection, instance segmentation, and pose estimation in a single forward pass. Instead of maintaining
+                  separate models or multi-stage pipelines, I modified the training and inference stack to support a unified
+                  multitask perception workflow.
+                </p>
+
+                <p class="project-lead">
+                  The project required coordinated changes across the model head, dataset handling, collate logic, loss design,
+                  metrics, and export pipeline. I also extended the workflow to support deployment-oriented export formats
+                  including ONNX, TorchScript, and TensorRT, making the project both a modeling contribution and a practical
+                  systems integration effort.
+                </p>
+
+                <div class="btn-row">
+                  <a class="btn btn-primary btn-outline" href="https://github.com/Ulteraa/research-projects/tree/main/yolov8plus-joint-pose-segmentation">Code</a>
+                </div>
+              </div>
+
+              <div>
+                <div class="media-card">
+                  <video autoplay muted loop playsinline preload="metadata" poster="img/pose_segment_poster_v2.png">
+                    <source src="img/pose_segment_homepage_demo_v2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                  <div class="media-caption">
+                    YOLOv8+ pose-segment demo. A unified multitask perception model that jointly predicts
+                    detection, instance masks, and human keypoints, with export-ready workflows for ONNX,
+                    TorchScript, and TensorRT.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" id="maskrcnn-tensorrt">
+            <div class="project-grid">
+              <div>
+                <h2 class="project-title">TensorRT Conversion for Joint Segmentation and Pose Estimation in Mask R-CNN</h2>
+                <div class="project-meta">
+                  Detectron2 · Mask R-CNN · Instance Segmentation / Pose Estimation · ONNX · TensorRT · NVIDIA GPUs
+                </div>
+
+                <p class="project-lead">
+                  This project addressed a practical deployment gap in multi-task perception systems. While
+                  TensorRT conversion for Detectron2 instance segmentation is more commonly available, support
+                  for <strong>joint instance segmentation and keypoint pose estimation</strong> is far less documented.
+                  I built a deployment workflow that preserved boxes, masks, and keypoints together in a
+                  TensorRT-based inference pipeline.
+                </p>
+
+                <p class="project-lead">
+                  The work required coordinated changes across model export, ONNX graph generation, keypoint-aware
+                  output handling, tensor I/O binding, inference, and visualization. The result was a practical
+                  conversion path for deploying a Mask R-CNN model that jointly performs segmentation and pose
+                  estimation instead of dropping keypoints during optimization.
+                </p>
+
+                <div class="btn-row">
+                  <a class="btn btn-primary btn-outline" href="https://github.com/Ulteraa/research-projects/tree/main/detectron2-tensorrt-pose-segmentation">Code</a>
+                      </div>
+              </div>
+
+              <div>
+                <div class="media-card">
+                  <video autoplay muted loop playsinline preload="metadata" poster="img/maskrcnn_tensorrt_poster_v2.png">
+                    <source src="img/maskrcnn_tensorrt_homepage_demo_v2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                  <div class="media-caption">
+                    Mask R-CNN TensorRT demo. Joint segmentation and keypoint pose estimation preserved through a custom export and deployment workflow for TensorRT-based inference.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" id="face-modeling-3d">
+          <div class="project-grid">
+            <div>
+              <h2 class="project-title">Controllable 3D Face Modeling with Identity–Expression Decoupling</h2>
+              <div class="project-meta">
+                3D Face Modeling · Generative Modeling · Supervised Autoencoder · GAN · Expression Control · Synthetic Faces
+              </div>
+          
+              <p class="project-lead">
+                This project focuses on controllable 3D face generation for applications such as virtual avatars,
+                facial expression transfer, and synthetic data generation. While existing 3D generative models
+                can produce compact representations of facial shape and appearance, they often lack fine control
+                over subtle expressions.
+              </p>
+          
+              <p class="project-lead">
+                I developed a 3D face generative framework that decouples identity and expression, enabling
+                granular expression control while preserving identity. The model combines a supervised
+                autoencoder with adversarial training to generate high-quality 3D faces in both shape and
+                texture, and supports learning from either holistic expression labels or Action Unit labels.
+              </p>
+          
+              <div class="btn-row">
+                <a class="btn btn-primary btn-outline" href="https://aashishrai3799.github.io/3DFaceCAM/">Code</a>
+              </div>
+            </div>
+          <div>
+            <div class="media-card">
+              <img src="img/3dfacecam.gif" alt="3D face modeling demo">
+              <div class="media-caption">
+                3D face generation demo showing identity-preserving expression control through a disentangled
+                generative model for shape and appearance.
+              </div>
+            </div>
+          </div>
+        </div>
+        </div> 
+
+          <div class="project-card" id="safe-o2o-robotics">
+            <div class="project-grid">
+              <div>
+                <h2 class="project-title">Safe Offline-to-Online RL for Vision-Based Robotic Manipulation</h2>
+                <div class="project-meta">
+                  RoboMimic · Vision-Based Manipulation · Actor-Critic · BC Prior · Critic Ensemble · Safety-Gated Online Adaptation
+                </div>
+          
+                <p class="project-lead">
+                  This project explores a practical framework for <strong>safe offline-to-online reinforcement learning</strong>
+                  in vision-based robotic manipulation. The policy starts from offline demonstrations with image observations
+                  and robot proprioception, then adapts online under strict safety constraints instead of relying on unrestricted exploration.
+                </p>
+          
+                <p class="project-lead">
+                  The method combines visual scene encoding, actor-critic learning, a behavioral-cloning prior, and
+                  uncertainty-aware action filtering. A critic ensemble estimates both value and uncertainty, while a safety
+                  module regularizes the actor toward dataset-supported behavior offline and filters risky actions during deployment.
+                  Online adaptation then gradually relaxes these constraints, enabling cautious improvement under distribution shift.
+                </p>
+          
+                <div class="btn-row">
+                  <a class="btn btn-primary btn-outline" href="https://github.com/Ulteraa/research-projects/tree/main/safe-o2o-robomimic">Code</a>
+                </div>
+              </div>
+          
+              <div>
+                <div class="media-card">
+                  <video autoplay muted loop playsinline preload="metadata" poster="img/safe_o2o_robotics_poster.png">
+                    <source src="img/rollout_v3_actor_20.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                  <div class="media-caption">
+                    Safe offline-to-online manipulation rollout. An offline-trained visual policy adapts online through
+                    uncertainty-aware action filtering and conservative policy updates, improving behavior while keeping exploration bounded by a safety prior.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<div class="project-card" id="annotation-tool">
+  <div class="project-grid">
+    <div>
+      <h2 class="project-title">Interactive Annotation and Segmentation Tool with Segment Anything </h2>
+      <div class="project-meta">
+         Interactive Annotation · Segmentation Tooling · Point / Box / Manual Prompts · COCO Export · Detectron2 Visualization
+      </div>
+
+      <p class="project-lead">
+        Built an interactive annotation and segmentation tool around Segment Anything to support
+        fast mask creation through point prompts, bounding-box prompts, and manual polygon annotation.
+      </p>
+
+      <p class="project-lead">
+        The system includes undo, clear, brush, and save functionality, supports iterative visual feedback during annotation,
+        and exports results in COCO format for downstream training pipelines. I also added Detectron2-based visualization
+        to validate the resulting masks and annotations directly on top of the source images.
+      </p>
+
+      <div class="btn-row">
+        <a class="btn btn-primary btn-outline" href="https://github.com/Ulteraa/research-projects/tree/main/interactive-sam-annotation-tool" target="_blank" rel="noopener noreferrer">Code</a>
+      </div>
+    </div>
+
+    <div>
+      <div class="media-card">
+        <video autoplay muted loop playsinline preload="metadata" poster="img/annotation_tool_poster.png">
+          <source src="img/annotation_tool_demo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="media-caption">
+          Interactive annotation demo. This workflow supporting point prompts, box prompts, manual segmentation,
+          selective brush erasing, undo/clear actions, and COCO-format export for dataset creation.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-card" id="bevfusion-refine">
+            <div class="project-grid">
+              <div>
+                <h2 class="project-title">Reliable Camera–LiDAR BEV Fusion with Proposal-Level 3D Box Refinement</h2>
+                <div class="project-meta">
+                  MMDetection3D · BEVFusion · nuScenes mini · Multimodal 3D Detection · Reliability-Aware Fusion · Object Refinement
+                </div>
+          
+                <p class="project-lead">
+                  Built a custom multimodal 3D detection research branch on top of <strong>MMDetection3D / BEVFusion</strong> for
+                  <strong>nuScenes mini</strong>. I replaced the stock BEV fusion block with a <strong>reliability-aware fusion module</strong>
+                  and added an <strong>object-level refinement head</strong> that samples local fused-BEV context around coarse proposals
+                  to predict residual corrections for 3D box geometry and motion.
+                </p>
+          
+                <p class="project-lead">
+                  The project involved architecture design, framework-level integration, training/debugging, and qualitative
+                  3D visualization of predicted boxes and point clouds. It was framed as a targeted systems improvement:
+                  diagnose where fusion helps semantics more than localization, then modify the model to address that gap directly.
+                </p>
+          
+                <div class="btn-row">
+                  <a class="btn btn-primary btn-outline" href="https://github.com/Ulteraa/research-projects/tree/main/bevfusion-reliable-refinement">Code</a>
+                </div>
+              </div>
+          
+              <div>
+                <div class="media-card">
+                  <video autoplay muted loop playsinline preload="metadata" poster="img/bevfusion_poster.png">
+                    <source src="img/cam_front_web_720h.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                  <div class="media-caption">
+                    BEVFusion research prototype with reliability-aware fusion and proposal-level 3D box refinement on nuScenes mini.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-card" id="hybrid-gs-sdf">
+            <div class="project-grid">
+              <div>
+                <h2 class="project-title">Hybrid Geometry-Aware Gaussian Splatting for Novel View Synthesis</h2>
+                <div class="project-meta">
+                  Gaussian Splatting · SDF · Novel View Synthesis · 3D Generative Modeling · CO3D · Unified 3D World Models
+                </div>
+          
+                <p class="project-lead">
+                  Built a custom unified training framework that combines <strong>Gaussian Splatting (GS)</strong> with an
+                  image-conditioned <strong>Signed Distance Function (SDF)</strong> branch for novel view synthesis. The system
+                  uses a shared trainable encoder, a GS rendering branch, and a geometry-aware SDF branch trained jointly in a
+                  single optimization loop.
+                </p>
+          
+                <p class="project-lead">
+                  A key insight from the project was that, for CO3D-style data, <strong>GS should remain the primary rendering backbone</strong>,
+                  while the SDF branch is more effective as a <strong>geometry prior / regularizer</strong> than as a standalone vanilla DeepSDF
+                  pipeline. The result was a working hybrid research prototype with promising novel-view rendering behavior and a practical
+                  step toward more unified 3D world models.
+                </p>
+          
+                <div class="btn-row">
+                  <a class="btn btn-primary btn-outline" href="https://github.com/Ulteraa/research-projects/tree/main/hybrid-gs-sdf">Code</a>
+                </div>
+              </div>
+          
+              <div>
+                <div class="media-card">
+                  <video autoplay muted loop playsinline preload="metadata" poster="img/gs_sdf_poster.png">
+                    <source src="img/path.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                  <div class="media-caption">
+                    Hybrid GS + SDF research prototype for novel view synthesis, using Gaussian Splatting as the rendering backbone
+                    and an implicit SDF branch as a geometry-aware regularizer.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="home-section" id="research-case-studies">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-12 section-heading">
+        <h1 class="section-title-left">Research Case Studies</h1>
+      </div>
+
+      <div class="col-xs-12 col-md-12">
+        <div class="project-card" id="graph-structured-learning">
+          <div class="project-grid">
+            <div>
+              <h2 class="project-title">When More Expressive Graph Models Do Not Win</h2>
+              <div class="project-meta">
+                PyTorch Geometric · Cora · ESOL · GCN · GATv2 · TransformerConv · Scaffold Splits · Multi-Seed Evaluation
+              </div>
+
+              <p class="project-lead">
+                I revisited a set of graph-learning prototypes as a controlled benchmark spanning
+                transductive node classification and molecular regression. Instead of presenting a
+                single favorable checkpoint, I standardized GCN, graph-attention, and transformer-style
+                models under validation-selected early stopping and repeated every experiment across
+                three deterministic seeds.
+              </p>
+
+              <p class="project-lead">
+                On Cora, GCN and GAT reached the same <strong>0.802 mean test accuracy</strong>, while GCN
+                used approximately half the trainable parameters and showed lower seed variance. On ESOL,
+                GCN produced the strongest mean out-of-scaffold result at <strong>1.450 RMSE</strong>, but its
+                run-to-run variance exposed a real generalization risk. The practical lesson is that model
+                selection should follow graph structure, data regime, and uncertainty—not architectural
+                complexity alone.
+              </p>
+
+              <div class="btn-row">
+                <a class="btn btn-primary btn-outline" href="https://github.com/Ulteraa/graph-and-structured-learning" target="_blank" rel="noopener noreferrer">Code &amp; Benchmark</a>
+              </div>
+            </div>
+
+            <div>
+              <div class="media-card">
+                <img src="img/structured_learning_results.png"
+                     alt="Cora node-embedding visualization and ESOL measured-versus-predicted solubility results"
+                     loading="lazy" decoding="async">
+                <div class="media-caption">
+                  Real benchmark outputs from validation-selected checkpoints: learned Cora node embeddings
+                  and held-out ESOL scaffold-split predictions. Summary values report mean ± standard deviation
+                  across three deterministic seeds.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="powered-by">
+      <span class="pull-right">
+        <a href="#top" id="back_to_top"><span class="button_icon"><i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i></span></a>
+      </span>
+    </p>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+<script src="js/jquery-1.12.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/hugo-academic.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js"></script>
+<script>if (window.hljs) { hljs.initHighlightingOnLoad(); }</script>
+
+</body>
+</html>
