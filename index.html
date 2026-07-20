@@ -651,6 +651,53 @@
             </div>
           </div>
         </div>
+
+        <div class="project-card" id="representation-learning-generative-models">
+          <div class="project-grid">
+            <div>
+              <h2 class="project-title">Good Samples Are Not Enough for Reliable Generative Systems</h2>
+              <div class="project-meta">
+                GAN Objectives · Conditional Control · Image Translation · Diffusion · Failure Analysis · Temporal Stability
+              </div>
+
+              <p class="project-lead">
+                I reorganized a broad generative-model archive around a systems contract: fidelity,
+                coverage, controllability, conditional adherence, and temporal stability can fail
+                independently. A deterministic CPU audit now measures versioned outputs, exposes
+                failure cases, and labels training-dependent claims historical when datasets or
+                checkpoints are missing.
+              </p>
+
+              <p class="project-lead">
+                Conditional WGAN-GP outputs reached <strong>97.5% ± 4.5% leave-one-checkpoint
+                consistency</strong>. Across 24 Pix2Pix pairs, median condition-edge recall was
+                <strong>94.9%</strong>, but background color spill reached <strong>31.4%</strong> in
+                the worst archived case. Across 44 StyleGAN control sequences, illumination edits
+                were smoother than pose: roughness <strong>0.424 versus 0.929</strong> and consecutive
+                edge continuity <strong>0.994 versus 0.930</strong>. The result is not an architecture
+                leaderboard; it is an evaluation framework aligned to the generative-system contract.
+              </p>
+
+              <div class="btn-row">
+                <a class="btn btn-primary btn-outline" href="https://github.com/Ulteraa/representation-learning-generative-models" target="_blank" rel="noopener noreferrer">Artifact Benchmark &amp; Research History</a>
+              </div>
+            </div>
+
+            <div>
+              <div class="media-card">
+                <img src="img/generative_systems_portfolio_summary.jpg"
+                     alt="Artifact-backed generative-systems evaluation across condition consistency, image-translation failures, and temporal control stability"
+                     loading="lazy" decoding="async">
+                <div class="media-caption">
+                  Current CPU audit of versioned artifacts across condition consistency, conditional
+                  adherence, failure containment, and control stability. Diffusion fidelity and
+                  dataset-dependent training remain historical until reference data and checkpoints
+                  are restored.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         </div>
       </div>
     </div>
